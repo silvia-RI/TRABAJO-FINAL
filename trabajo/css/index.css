@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+/*azul1 color #3366CC
+azul2 color #D9E5FE
+aul3 color #6EFBFB
+negro color #000000
+blanco color #ffffff*/
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/* ... excepto los que se encuentran en párrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Configuramos el texto que seleccionamos */
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/* Nivelamos problemas de tipografías y colocación de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+/* Configuramos la tipografía para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  color: var(--negro);
+  /* opcional */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+/***********Star custom css**********/
+/***********Logo y Menu***********/
+.header {
+ 
+  
+}
+.header__container {
+  width: 80%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo__img {
+  width: 20%;
+  padding: 0.8em;
+}
+
+.menu__nav {
+  
+  text-transform: uppercase;
+  padding: 10px 100px;
+  border-radius: 0.5rem;
+}
+
+.menu__ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  gap: 4em;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+ .menu__li{
+  
+ opacity: 0.8;
+ color: #3366CC; 
+    
+} 
+.menu__li.active{
+  border-bottom: 2px solid  #3366CC;
+  padding-bottom: 0.6em;;
+  opacity: 1;
+  
+  
+}
+
+/****** banner *******/
+
+.title__banner {
+  width: 30%;
+  color: #a4f5f5;
+  font-size:2.1em;
+  font-weight:800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+}
+
+.column {
+  
+  max-width: 25%;
+  padding: 8px;
+  margin: 20px 0;
+}
+
+.column__img {
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 3px 3px 5px #ccc;
+  transition: all 0.5s ease-in-out;
+}
+
+.column__img:hover {
+  transform: scale(1.08, 1.08);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+.test{
+    width: 100%;
+    height: 50px;
+    border: solid 2px red;
+}
+
+/************Footer*******/
+.footer__wrapper{
+    padding: 40px 0;
+    background-color: #3366CC;
+   
+}
+
+
+.footer__wrapper a {
+  color: #333;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer__wrapper .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.footer__wrapper .social {
+  
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+
+
+.footer__wrapper #social-fb:hover {
+  color: #3B5998;
+}
+
+.footer__wrapper #social-tw:hover {
+  color: #4099FF;
+}
+
+.footer__wrapper #social-gp:hover {
+  color: #d34836;
+}
+
+.footer__wrapper #social-em:hover {
+  color: #f39c12;
+}
+#footer__copy{
+  color:white;
+  margin-top: 1em;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+
+}
+/**********css pagina de contacto********/
+iframe{
+  width: 80%;
+  height: 400px;
+  margin-top: 2em;
+  
+
+
+}
+
+.main__container .form{
+  width: 275px;
+  height: 300px;
+  margin: 2em;
+  border:solid black 2.2px;
+  font-size: 1.2em;
+  border-radius: 15px;
+
+}
+
+.form__p{
+  width: 100%;
+  border-top: 0.2px solid grey;
+  padding: 1rem 0 0 1rem;
+  margin: 1em 0;
+  
+
+}
+.form__button{
+  background-color: grey;
+  
+  border: 0.4px solid grey;
+  margin: 0.6rem 1.9rem ;
+  padding: 0.8rem 2rem;
+  border-radius: 1.8rem;
+ 
+  
+
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Peluditos travel</title>
+    <script src="js/index.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <img
+          class="logo__img"
+          src="assets/Logo/logo-peluditos.png "
+          alt="logo"
+        />
+        <nav class="menu__nav">
+          <ul class="menu__ul">
+            <li class="menu__li"><a href="destinos.html">Destinos</a></li>
+            <li class="menu__li"><a href="actividades.html">Actividades</a></li>
+            <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
+            <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a>
+            </li><li class="menu__li active"><a href="contactos.html">Contactos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9713239808757!2d-3.7081374240921696!3d40.43163387143725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1682156360275!5m2!1ses!2ses"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="main__container">
+        <form class="form">
+          <p class="form__p">Ingresa tu nombre completo:<input type="text" name="nombrecompleto" /></p>
+          <p class="form__p">Deja un mensaje:<textarea name="mensaje"></textarea></p>
+          <button class="form__button" onclick="enviarformulario()">Enviar la información</button>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__wrapper">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <div class="container__footer">
+          <a href="#0"
+            ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="#0"
+            ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="#0"
+            ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i
+          ></a>
+          <a href="mailto:#"
+            ><i
+              id="social-em"
+              class="fa-sharp fa-regular fa-envelope fa-2xl"
+            ></i
+          ></a>
+        </div>
+        <p id="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
+      </div>
+    </footer>
+  </body>
+</html>
