@@ -162,7 +162,6 @@ body {
 .menu__nav {
   
   text-transform: uppercase;
-  padding: 10px 100px;
   border-radius: 0.5rem;
 }
 
@@ -170,8 +169,8 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-end;
-  gap: 4em;
-  font-size: 0.8em;
+  gap: 6em;
+  font-size: 1em;
   font-weight: 600;
 }
  .menu__li{
@@ -192,8 +191,8 @@ body {
 
 .title__banner {
   width: 30%;
-  color: #a4f5f5;
-  font-size:2.1em;
+  color:#3366CC;
+  font-size:3.5em;
   font-weight:800;
   text-align: end;
   position: absolute;
@@ -345,7 +344,18 @@ iframe{
   margin: 0.6rem 1.9rem ;
   padding: 0.8rem 2rem;
   border-radius: 1.8rem;
- 
-  
+
+}
+
+/****************Css quien somos*************/
+.title__qs{
+  width: 30%;
+  color:#3366CC ;
+  font-size:3.5em;
+  font-weight:800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
 
 }
