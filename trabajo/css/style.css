@@ -1,0 +1,844 @@
+/**** Reset Css ****/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+/*azul1 color #3366CC
+azul2 color #D9E5FE
+aul3 color #6EFBFB
+negro color #000000
+blanco color #ffffff*/
+
+/**** Evitamos problemas con las imagenes ****/
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+/**** Reseteamos los enlaces para funcionar como cajas... ****/
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+/**** ... excepto los que se encuentran en párrafos ****/
+p a {
+  display: inline;
+}
+
+/**** Quitamos los puntos de los <li> ****/
+li {
+  list-style-type: none;
+}
+
+/* Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/**** Desactivamos estilos por defecto de las principales etiquetas de texto ****/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**** Evitamos problemas con los pseudoelementos de quotes ****/
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/**** Configuramos el texto que seleccionamos ****/
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+/**** Nivelamos problemas de tipografías y colocación de formularios ****/
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* opcional */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/**** Reseteamos las tablas ****/
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/**** Evitamos problemas con los SVG ****/
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+/**** Configuramos la tipografía para toda la web ****/
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: "Lato", sans-serif;
+  color: var(--negro);
+  /* opcional */
+  /*-webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  /* opcional */
+  font-smooth: always;
+  /* opcional */
+  -webkit-font-smoothing: antialiased;
+  /* opcional */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**** Css Menu, Logo y Responsive ****/
+/**** Desde la linea 
+-->logo__img: logo creado para todas las paginas.
+-->Header__nav: engloba toda la seccion del menu y el logo
+-->Menu__button__container: crea el menu cuando esta en responsive.
+-->Menu__toggle: desactiva el menu cuando esta toggle.
+-->Menu__button/after y beefore:le da las caracteristicas al menu responsive,con una posicion absoluta y tambien tiene una transicion para que cambie del menu a la X.
+-->#menu__toggle:checked + .menu__button__container .menu__button::before:al hacer checked crea una rotacion en el menu responsive.
+-->#menu__toggle:checked + .menu__button__container .menu__button:al hacer checked añade el color negro.
+-->#menu__toggle:checked + .menu__button__container .menu__button::after:al volver hacer checked, vuelve la rotacion a su estado original.
+-->Menu__nav:le da estilos al menu, lo pone horizontal y cambia el formato de la letra.
+-->Menu > li:le da un espacio al menu y cuando esta en responsive oculta todos los hijos directos.
+-->Menu__li: le da una opacidad azul.
+-->Menu__li.active:cuando la clase esta activa, crea una linea de color azul y quita la opacidad antes aplicada.
+-->Menu__button__container:coloca el contenido en responsive.
+-->menu:pone el menu en una posicion absoluta, aplicandole una direccion centrada en columna y un z-indez que indica el orden del elemento y descendientes.
+-->#menu__toggle ~ .menu li: en responsive cuando se ejecuta el estado toggle, cambia el estado de visibilidad del menu y hace una transicion.
+-->#menu__toggle:checked ~ .menu li: cuando esta en responsive y haces checked vuelve a su estado natural, tambien le aplico varias caracteristicas, como color,ancho y separaciones del mismo.
+-->Title__banner.home:modificacion del titulo principal en la pagina home al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+-->Title__banner.actividades:modificacion del titulo principal en la pagina actividades al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+-->title__banner.recomendaciones:modificacion del titulo principal en la pagina recomendaciones al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+-->title__banner.qs:modificacion del titulo principal en la pagina quien somos al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+
+
+
+
+****/
+.logo__img {
+  width: auto;
+  padding-left: 13em;
+  margin: 1em 0;
+}
+ .header__nav {
+  color: #FFF;
+  height: 50px;
+  padding: 1em;
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu__button__container {
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:2em;
+}
+#menu__toggle {
+  display: none;
+}
+.menu__button,
+.menu__button::before,
+.menu__button::after {
+  height: 4px;
+  width: 30px;
+  display: block;
+  background-color: #000;
+  position: absolute;
+  border-radius: 2px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  
+}
+.menu__button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu__button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu__toggle:checked + .menu__button__container .menu__button::before {
+  margin-top: 0px;
+  transform: rotate(405deg);
+}
+
+#menu__toggle:checked + .menu__button__container .menu__button {
+  background: rgba(255, 255, 255, 0);
+}
+#menu__toggle:checked + .menu__button__container .menu__button::after {
+  margin-top: 0px;
+  transform: rotate(-405deg);
+}
+.menu__nav { 
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase; 
+}
+
+.menu > li {
+  margin: 0 1rem;
+  overflow: hidden;
+}
+.menu__li{
+  opacity: 0.8;
+  color: #3366CC;
+}
+.menu__li.active{
+  border-bottom: 2px solid  #3366CC;
+  padding-bottom: 0.6em;;
+  opacity: 1;
+}
+
+/**************@media ************/
+
+
+/* @media (max-width: 800px) {
+  .menu__button__container {
+    display: flex;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+  }
+  #menu__toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu__toggle:checked ~ .menu li {
+    height: 2.5em;
+    border: 1px solid #333;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    width: 100%;
+    color: #3366CC;
+    background-color: #222;
+    margin: 0;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .title__banner.home{
+    font-size:1.2em;
+    top: 15%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.actividades{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.recomendaciones{
+    font-size:1.2em;
+    top: 10%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.qs{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+
+  }
+
+} */
+
+/****** @media tablet *****/
+@media (min-width: 480px) and (max-width: 1024px) {
+  .menu__button__container {
+    display: flex;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+  }
+  #menu__toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu__toggle:checked ~ .menu li {
+    height: 2.5em;
+    border: 1px solid #333;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    width: 100%;
+    color: #3366CC;
+    background-color: #222;
+    margin: 0;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .title__banner.home{
+    font-size:1.2em;
+    top: 15%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.actividades{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.recomendaciones{
+    font-size:1.2em;
+    top: 10%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.qs{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+
+  }
+
+}
+
+/********@media mobil ********/
+@media (min-width: 280px) and (max-width: 479px) {
+  .menu__button__container {
+    display: flex;
+  }
+  .menu {
+    width: 100%;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index:1;
+  }
+  #menu__toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu__toggle:checked ~ .menu li {
+    height: 2.5em;
+    border: 1px solid #333;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    width: 100%;
+    color: #3366CC;
+    background-color: #222;
+    margin: 0;
+    padding: 0.5em 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .title__banner.home{
+    font-size:1em;
+    top: 11%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.actividades{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.recomendaciones{
+    font-size:1.2em;
+    top: 10%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner.qs{
+    font-size:1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+
+  }
+
+}
+
+
+/**** Final del Header ****/
+
+
+/**** Inicio del Main y Responsive ****/
+/**** Desde la linea 352 - 402
+-->Title__banner: Titulo principal colocado de forma absoluta encima de la imagen,en tono aul con una pequeña sombra mas clarita y la letra en mayusculas y con mas grosor
+-->Main__container:centra el contenido del bloque completo.
+-->Row:centra el contenido del bloque de imagenes con un ancho del 80%.
+-->Colum:da estilo a cada columna,con separaciones.
+-->Colum__img:crea un separacion en vertical, y una transicion progresivamente.
+-->Colum__img:hover:cuando esta en hover se hace una transformacion para que la imagen se haga mas grande.
+-->Responsive 600px /800px:hacer el responsive, a  800px se pone en dos columnas y en 600% se pone en una columna.
+****/
+
+.title__banner{
+  width: 30%;
+  color:#3366CC;
+  font-size:3.5em;
+  font-weight:800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-shadow: 1px 3px 12px #96b5f5;
+  z-index: 1;
+}
+
+.main__container {
+  display: flex;
+  justify-content: center;
+}
+.row {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  max-width: 25%;
+  padding: .5rem;
+  margin: 3em 0;
+}
+.column__img {
+  margin-top: .625rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.column__img:hover {
+  transform: scale(1.08, 1.08);
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/**** Final del Main ****/
+
+
+
+/**** Inicio del Footer y Responsive ****/
+/**** Desde la linea  
+-->Test:
+-->Footer__wrapper:
+-->Footer__wrapper a:
+-->Container__footer:
+-->Footer__wrapper.social:hover:
+-->Footer__wrapper.social:
+-->Footer__wrapper #social-fb:hover:
+-->Footer__wrapper #social-fb:hover:
+-->footer__wrapper #social-tw:hover:
+-->footer__wrapper #social-gp:hover:
+-->footer__wrapper #social-em:hover:
+-->#footer__copy:
+
+
+****/
+/*.test{
+  width: 100%;
+}*/
+.footer__wrapper{
+    background-color: #3366CC;
+    padding: 40px 0;
+}
+.footer__wrapper a {
+  color: #333;
+}
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer__wrapper .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.footer__wrapper .social {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+.footer__wrapper #social-fb:hover {
+  color: #3B5998;
+}
+.footer__wrapper #social-tw:hover {
+  color: #4099FF;
+}
+.footer__wrapper #social-gp:hover {
+  color: #d34836;
+}
+.footer__wrapper #social-em:hover {
+  color: #f39c12;
+}
+#footer__copy{
+  color:white;
+  margin-top: 1em;
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+/****************Css quien somos*************/
+.banner__qs{
+  margin-bottom: 3em;
+}
+.main__container__qs{
+  width: 80%;
+  margin: auto;
+}
+.text__qs{
+font-size: 1.5em;
+padding: 0.3em 0;
+}
+.banner__qs__person{
+  margin-top: 3em;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  background: rgb(51,102,204);
+  background: -moz-linear-gradient(117deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  background: -webkit-linear-gradient(117deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  background: linear-gradient(117deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
+}
+
+.banner__qs__person__r{
+  /* margin-top: 3em; */
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  background: rgb(51,102,204);
+  background: -moz-linear-gradient(333deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  background: -webkit-linear-gradient(333deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  background: linear-gradient(333deg, rgba(51,102,204,1) 11%, rgba(110,251,251,0.7763480392156863) 81%, rgba(217,229,254,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
+}
+
+.banner__qs__person__img{
+  /* border: 3px solid rebeccapurple; */
+  overflow: hidden;
+  margin-left: 15%;
+  width: 40%;
+}
+.banner__qs__person__img__r{
+  /* border: 3px solid rebeccapurple; */
+  overflow: hidden;
+  margin-right: 15%;
+  width: 60%;
+}
+.banner__qs__person__text{
+ padding: 10%;
+}
+
+
+/****************Css destinos******************/
+.main__container__destinos{
+  width: 80%;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.slider__destinos{
+  max-width: 400px;
+  margin: auto;
+  border-radius: 2rem;
+  overflow: hidden;
+  position: relative;
+ }
+ .slider__container{
+  position: relative;
+ }
+ .slider__img{
+  background-color: antiquewhite;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s ease;
+
+ }
+ .slider__img.isActive{
+  opacity: 1;
+ }
+ .slider__img:nth-child(1){
+  position: static;
+ }
+ .slider__button{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color:#3366CC;
+  
+  border-radius: 50%;
+  position: absolute;
+  padding: 0.8rem;
+  top: calc( 50% - 1.5rem);
+
+  cursor: pointer;
+  transform: scale(1);
+  transition: all .5s ease;
+ }
+ .slider__button:hover{
+  transform: scale(.9);
+ }
+ .slider__button:active{
+  transform: scale(1.2);
+
+ }
+ .slider__button.prev{
+  left: 3%;
+
+ }
+ .slider__button.next{
+  right: 3%;
+ }
+ .slider__svg{}
+ .slider__ul{
+  width: 100%;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap:1rem;
+   
+  position: absolute;
+  bottom: 0;
+  left: 0;
+ }
+ .slider__li{}
+ .slider__punto{
+  width: 0.5rem;
+  height: 0.5rem;
+  
+  border-radius: 50%;
+  border:2px solid black;
+  transform: scale(1);
+  transition: all .5s ease;
+
+  cursor: pointer;
+ }
+ .slider__punto:hover{
+  transform: scale(.9);
+  background-color: lightgrey;
+ }
+ .slider__punto:active{
+  transform: scale(1.1);
+ }
+ .slider__punto.isActive{
+  background-color:#3366CC;
+
+ }
+ /******* Css Actividades*******/
+
+ .container__h2{
+  color:#3366CC;
+  font-size:3.5rem;
+  font-weight:800;
+  text-transform: uppercase;
+  margin: 1rem 0;
+
+ }
+ .main__container__actividades{
+  width: 80%;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+ .container__content{
+  font-size: 1.5rem;
+  line-height: 1.5;
+ }
+ .container__img{
+  width: 50%;
+  justify-content: center;
+  margin: 1rem 0;
+ }
+
+/**** Css recomendaciones ****/
+.main__container__recomendaciones{
+  width: 80%;
+  margin: auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.title__banner__recomendaciones{
+  width: 30%;
+  color:#3366CC;
+  font-size:3.5em;
+  font-weight:800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-shadow: 1px 3px 12px #96b5f5;
+
+}
+/**** Css Actividades ****/
+
+
+/**********css pagina de contacto********/
+
+/**** Al iframe le quite los estilos que venian predefinidos y le he aplicado un 80% de ancho,
+ una altura de 400px y margin top para separarlo del menu****/
+/**** ****/
+iframe{
+  width: 80%;
+  height: 400px;
+  margin-top: 2em;
+}
+/**** ****/
+.main__container .form{
+  width: 275px;
+  height: 320px;
+  margin: 2em;
+  border:solid #3366CC 2.2px;
+  font-size: 1.2em;
+  border-radius: 15px;
+}
+.form__p{
+  width: 100%;
+  border-bottom: 0.2px solid #3366CC ;
+  padding: 1rem 0 0 1rem;
+  margin: 1em 0;
+}
+.form__p input{
+  border:solid #3366CC 0.2px;
+  border-radius: 1rem;
+  margin: 0.6rem 1.9rem;
+}
+.form__p textarea{
+  border:solid #3366CC 0.2px;
+  border-radius:1rem;
+  margin: 0.6rem 1.9rem;
+}
+.form__button{
+  background-color: #D9E5FE;
+  
+  border: 0.4px solid grey;
+  margin: 0.4rem 1.7rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 1.8rem;
+}
+/**** Final de Css Pagina de contactos****/
+
+
+

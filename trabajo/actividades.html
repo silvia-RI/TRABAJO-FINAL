@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Peluditos travel</title>
     <script src="js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,29 +15,66 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-       <a class="logo__img" href="index.html">
-        <img   src="assets/Logo/logo-peluditos.png" alt="logo"/></a>
-        <nav class="menu__nav">
-          <ul class="menu__ul">
-            <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-            <li class="menu__li active"><a href="actividades.html">Actividades</a></li>
-            <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
-            <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a></li>
-            <li class="menu__li"><a href="contactos.html">Contactos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <!--Inicio del Header-->
+    <!--El Menu esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
+       tambien esta adaptado a version movil, despues meto el logo de la pagina con una etiqueta de img -->
+       <section class="header__nav">
+        <div>
+          <a href="index.html">
+          <img class="logo__img" src="assets/Logo/logo-peluditos.png " alt="logo"/></a>
+        </div>
+        <input id="menu__toggle" type="checkbox" />
+        <label class='menu__button__container' for="menu__toggle">
+        <div class='menu__button'></div>
+      </label>
+        <ul class="menu menu__nav">
+          <li class="menu__li"><a href="destinos.html">Destinos</a></li>
+          <li class="menu__li active"><a href="actividades.html">Actividades</a></li>
+          <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
+          <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a></li>
+          <li class="menu__li"><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </section>
+
+    <!--final del header-->
 
     <main>
+      <div class="banner__actividades">
+        <h1 class="title__banner actividades">"Antes de una caminata,tenemos que llenar la panza"</h1>
+        <img src="assets/Img Actividades/act.avif" alt="familia">
+      </div>
+      <div class="main__container__actividades">
+        <h2 class="container__h2">Actividades en la playa</h2>
+        <p class="container__content">In sadipscing amet nonummy erat ipsum sed amet ut sit possim. Amet veniam ea consetetur eirmod vel nibh at voluptua sea. Lorem nostrud takimata amet dolore amet illum dolor gubergren velit gubergren sit aliquyam ut aliquyam euismod sadipscing. Voluptua quis vero vero consetetur amet sed accusam. Dolore aliquyam erat sed diam ut ipsum aliquyam rebum et eos aliquyam. Sit laoreet aliquyam stet commodo dolor duo. Takimata lorem et sea duo erat accusam rebum illum at nonumy clita ut sit duo aliquyam</p>
+        <img class="container__img" src="assets/Img home/galeria1.4.jpg" alt="1.4">
+      </div>
+      <div class="main__container__actividades">
+        <h2 class="container__h2">Actividades en la nieve</h2>
+        <p class="container__content">In sadipscing amet nonummy erat ipsum sed amet ut sit possim. Amet veniam ea consetetur eirmod vel nibh at voluptua sea. Lorem nostrud takimata amet dolore amet illum dolor gubergren velit gubergren sit aliquyam ut aliquyam euismod sadipscing. Voluptua quis vero vero consetetur amet sed accusam. Dolore aliquyam erat sed diam ut ipsum aliquyam rebum et eos aliquyam. Sit laoreet aliquyam stet commodo dolor duo. Takimata lorem et sea duo erat accusam rebum illum at nonumy clita ut sit duo aliquyam</p>
+        <img class="container__img" src="assets/Img home/galeria1.6.jpg" alt="1.4">
+      </div>
+      <div class="main__container__actividades">
+        <h2 class="container__h2">Actividades en la montaña</h2>
+        <p class="container__content">In sadipscing amet nonummy erat ipsum sed amet ut sit possim. Amet veniam ea consetetur eirmod vel nibh at voluptua sea. Lorem nostrud takimata amet dolore amet illum dolor gubergren velit gubergren sit aliquyam ut aliquyam euismod sadipscing. Voluptua quis vero vero consetetur amet sed accusam. Dolore aliquyam erat sed diam ut ipsum aliquyam rebum et eos aliquyam. Sit laoreet aliquyam stet commodo dolor duo. Takimata lorem et sea duo erat accusam rebum illum at nonumy clita ut sit duo aliquyam</p>
+        <img class="container__img" src="assets/Img home/galeria1.3.jpg" alt="1.4">
+      </div>
+
+
+      
+    
+
+
+      
       
     </main>
+    <!--final del main-->
 
+
+    <!--Inicio del footer-->
+    <!-- Es la finalizacion de la pagina donde meto varias redes sociales que enlazo de una pagina con un a href,que no derivan a ningun sitio
+     pero si cambia el estilo  y meto un id con un pequeño parrafo de que la pagina a sido creada por mi-->
     <footer>
       <div class="footer__wrapper">
-        
         <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <div class="container__footer">
           <a href="#0"><i id="social-fb" class="fa-brands fa-facebook  fa-2xl"></i></a>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Peluditos travel</title>
     <script src="js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,48 +14,130 @@
       rel="stylesheet"
     />
   </head>
-<body>
-    <header class="header">
-      <div class="header__container">
-        <a class="logo__img" href="index.html">
-          <img   src="assets/Logo/logo-peluditos.png" alt="logo"/></a>
-        <nav class="menu__nav">
-          <ul class="menu__ul">
-            <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-            <li class="menu__li"><a href="actividades.html">Actividades</a></li>
-            <li class="menu__li active"><a href="quiensomos.html">Quien somos</a></li>
-            <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a></li>
-            <li class="menu__li"><a href="contactos.html">Contactos</a></li>
-          </ul>
-        </nav>
+  <body>
+    <!--Inicio del Header-->
+    <!--El Menu esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
+       tambien esta adaptado a version movil, despues meto el logo de la pagina con una etiqueta de img -->
+    <section class="header__nav">
+      <div>
+        <a href="index.html">
+          <img
+            class="logo__img"
+            src="assets/Logo/logo-peluditos.png "
+            alt="logo"
+        /></a>
       </div>
-    </header>
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__button__container" for="menu__toggle">
+        <div class="menu__button"></div>
+      </label>
+      <ul class="menu menu__nav">
+        <li class="menu__li"><a href="destinos.html">Destinos</a></li>
+        <li class="menu__li"><a href="actividades.html">Actividades</a></li>
+        <li class="menu__li active">
+          <a href="quiensomos.html">Quien somos</a>
+        </li>
+        <li class="menu__li">
+          <a href="recomendaciones.html">Recomendaciones</a>
+        </li>
+        <li class="menu__li"><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </section>
 
+    <!--final del header-->
     <main>
       <div class="banner__qs">
-        <h1 class="title__qs">"Os presento a mis humanos"</h1>
-        <img src="assets/Img QS/Banner-QS.jpg" alt="familia">
+        <h1 class="title__banner qs">"Os presento a mis humanos"</h1>
+        <img src="assets/Img QS/Banner-QS.jpg" alt="familia" />
+      </div>
+      <div class="main__container__qs">
+        <p class="text__qs">
+          No somos una agencia de viajes basada en el concepto tradicional. Nos
+          consideramos un equipo de especialistas que aman viajar con la familia
+          al completo, con un concepto del viaje innovador.
+        </p>
+        <p class="text__qs">
+          Como agencia perseguimos un objetivo común: dar lo mejor de nosotros
+          para ofrecer los mejores viajes para nuestras mascotas.
+        </p>
+        <p class="text__qs">
+          Llegar hasta aqui no ha sido sencillo, hemos tenido que aunar
+          esfuerzos, basando nuestra formación en las mejores opiniones, en
+          prueba y error.
+        </p>
 
-
+        <p class="text__qs">
+          Somos una agencia joven y moderna, compuesta por profesionales cuyas
+          inquetudes hacen que crezcamos como equipo cada día.
+        </p>
+      </div>
+      <div class="banner__qs__person">
+        <div class="banner__qs__person__img">
+          <img src="assets/Img QS/javi_2.png" alt="Directiva, Javier" />
+        </div>
+        <div class="banner__qs__person__text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            laudantium labore corrupti veritatis similique omnis sed
+            necessitatibus! Sapiente facere sequi unde praesentium quo at
+            corporis, animi iste vel dolore officia.
+          </p>
+        </div>
+      </div>
+      <div class="banner__qs__person__r">
+        <div class="banner__qs__person__text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+            laudantium labore corrupti veritatis similique omnis sed
+            necessitatibus! Sapiente facere sequi unde praesentium quo at
+            corporis, animi iste vel dolore officia.
+          </p>
+        </div>
+        <div class="banner__qs__person__img__r">
+          <img src="assets/Img QS/silvia_2.png" alt="Directiva, Silvia" />
+        </div>
       </div>
 
-      
-
-     
+      <p class="text__qs">
+        Esto nos permite poner nuestro foco en lo fundamental, nuestros
+        clientes.
+      </p>
+      <p class="text__qs">
+        Partiendo siempre desde el punto de vista esencial, el de los miembros
+        mas exigentes de la familia, las mascotas.
+      </p>
     </main>
+    <!--final del main-->
 
+    <!--Inicio del footer-->
+    <!-- Es la finalizacion de la pagina donde meto varias redes sociales que enlazo de una pagina con un a href,que no derivan a ningun sitio
+     pero si cambia el estilo  y meto un id con un pequeño parrafo de que la pagina a sido creada por mi-->
     <footer>
       <div class="footer__wrapper">
-        
-        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
         <div class="container__footer">
-          <a href="#0"><i id="social-fb" class="fa-brands fa-facebook  fa-2xl"></i></a>
-          <a href="#0"><i id="social-tw" class="fa-brands fa-twitter  fa-2xl"></i></a>
-          <a href="#0" ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i></a>
-          <a href="mailto:#"><i id="social-em" class="fa-sharp fa-regular fa-envelope fa-2xl"></i></a>
+          <a href="#0"
+            ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i
+          ></a>
+          <a href="#0"
+            ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i
+          ></a>
+          <a href="#0"
+            ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i
+          ></a>
+          <a href="mailto:#"
+            ><i
+              id="social-em"
+              class="fa-sharp fa-regular fa-envelope fa-2xl"
+            ></i
+          ></a>
         </div>
         <p id="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
       </div>
     </footer>
+    <!--final del footer-->
   </body>
 </html>

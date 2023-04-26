@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Peluditos travel</title>
     <script src="js/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,31 +14,36 @@
       rel="stylesheet"
     />
   </head>
-  <body>
-    <header class="header">
-      <div class="header__container">
-        <a class="logo__img" href="index.html">
-          <img   src="assets/Logo/logo-peluditos.png" alt="logo"/></a>
-        <nav class="menu__nav">
-          <ul class="menu__ul">
-            <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-            <li class="menu__li"><a href="actividades.html">Actividades</a></li>
-            <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
-            <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a>
-            </li><li class="menu__li active"><a href="contactos.html">Contactos</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!--Inicio del Header-->
+    <!--El Menu esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
+       tambien esta adaptado a version movil, despues meto el logo de la pagina con una etiqueta de img -->
+       <section class="header__nav">
+        <div>
+          <a href="index.html">
+          <img class="logo__img" src="assets/Logo/logo-peluditos.png " alt="logo"/></a>
+        </div>
+        <input id="menu__toggle" type="checkbox" />
+        <label class='menu__button__container' for="menu__toggle">
+        <div class='menu__button'></div>
+      </label>
+        <ul class="menu menu__nav">
+          <li class="menu__li"><a href="destinos.html">Destinos</a></li>
+          <li class="menu__li"><a href="actividades.html">Actividades</a></li>
+          <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
+          <li class="menu__li"><a href="recomendaciones.html">Recomendaciones</a></li>
+          <li class="menu__li active"><a href="contactos.html">Contactos</a></li>
+        </ul>
+      </section>
 
+    <!--final del header-->
+
+    <!--inicio del main-->
+    <!--utilizo un iframe para poner un mapa,
+       hago un formulario sencillo con dos clases p y un button que no deriva a ningun sitio,
+        al darle a enviar sale un pequeño texto que te dice que a sido enviado-->
     <main>
       <div class="main__container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9713239808757!2d-3.7081374240921696!3d40.43163387143725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1682156360275!5m2!1ses!2ses"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.9713239808757!2d-3.7081374240921696!3d40.43163387143725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228600d4e3217%3A0xd55d707e5c7b0c93!2sCEI%3A%20ESCUELA%20DE%20DISE%C3%91O%20Y%20MARKETING%20-%20Cursos%20y%20m%C3%A1steres%20de%20dise%C3%B1o%20gr%C3%A1fico%2C%20interiores%2C%20web%2C%20videojuegos%20y%20marketing%20digital.!5e0!3m2!1ses!2ses!4v1682156360275!5m2!1ses!2ses"allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
       <div class="main__container">
         <form class="form">
@@ -48,29 +53,20 @@
         </form>
       </div>
     </main>
+    <!--final del main-->
 
+
+    <!--Inicio del footer-->
+    <!-- Es la finalizacion de la pagina donde meto varias redes sociales que enlazo de una pagina con un a href,que no derivan a ningun sitio
+     pero si cambia el estilo  y meto un id con un pequeño parrafo de que la pagina a sido creada por mi-->
     <footer>
       <div class="footer__wrapper">
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
         <div class="container__footer">
-          <a href="#0"
-            ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i
-          ></a>
-          <a href="#0"
-            ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i
-          ></a>
-          <a href="#0"
-            ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i
-          ></a>
-          <a href="mailto:#"
-            ><i
-              id="social-em"
-              class="fa-sharp fa-regular fa-envelope fa-2xl"
-            ></i
-          ></a>
+          <a href="#0" ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i></a>
+          <a href="#0" ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i></a>
+          <a href="#0"><i id="social-gp" class="fa-brands fa-google fa-2xl"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa-sharp fa-regular fa-envelope fa-2xl"></i></a>
         </div>
         <p id="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
       </div>
