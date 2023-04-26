@@ -5,13 +5,6 @@ function enviarformulario(){
 }
 
 
-
-/**********funciones slider destinos*******/
-
-function enviarformulario(){
-    alert("tu solicitud a sido enviada,nos pondremos en contacto con usted a la mayor brevedad");
-}
-
 /**********funciones slider destinos*******/
 
 const destinos = ['alaska', 'playa', 'montana'];
