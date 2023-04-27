@@ -143,7 +143,7 @@ body {
 }
 
 /**** Css Menu, Logo y Responsive ****/
-/**** Desde la linea 
+/**** Desde la linea 170 - 
 -->logo__img: logo creado para todas las paginas.
 -->Header__nav: engloba toda la seccion del menu y el logo
 -->Menu__button__container: crea el menu cuando esta en responsive.
@@ -162,12 +162,10 @@ body {
 -->#menu__toggle:checked ~ .menu li: cuando esta en responsive y haces checked vuelve a su estado natural, tambien le aplico varias caracteristicas, como color,ancho y separaciones del mismo.
 -->Title__banner.home:modificacion del titulo principal en la pagina home al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
 -->Title__banner.actividades:modificacion del titulo principal en la pagina actividades al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->title__banner.recomendaciones:modificacion del titulo principal en la pagina recomendaciones al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->title__banner.qs:modificacion del titulo principal en la pagina quien somos al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
-
-
-
-
+-->Title__banner.recomendaciones:modificacion del titulo principal en la pagina recomendaciones al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+-->Title__banner.qs:modificacion del titulo principal en la pagina quien somos al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
+-->Test__qs:modifica el tamañno de la letra de los parrafos.
+-->Container__h2:modifica el tamaño de la letra de los titulos de los parrafos.
 ****/
 .logo__img {
   width: auto;
@@ -253,74 +251,6 @@ body {
   opacity: 1;
 }
 
-/**************@media ************/
-
-/* @media (max-width: 800px) {
-  .menu__button__container {
-    display: flex;
-  }
-  .menu {
-    width: 100%;
-    margin-top: 50px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index:1;
-  }
-  #menu__toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu__toggle:checked ~ .menu li {
-    height: 2.5em;
-    border: 1px solid #333;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    width: 100%;
-    color: #3366CC;
-    background-color: #222;
-    margin: 0;
-    padding: 0.5em 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-
-  .title__banner.home{
-    font-size:1.2em;
-    top: 15%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner.actividades{
-    font-size:1.2em;
-    top: 20%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner.recomendaciones{
-    font-size:1.2em;
-    top: 10%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner.qs{
-    font-size:1.2em;
-    top: 20%;
-    left: 60%;
-    z-index: 0;
-
-  }
-
-} */
 
 /****** @media tablet *****/
 @media (min-width: 480px) and (max-width: 1024px) {
@@ -385,6 +315,12 @@ body {
     left: 60%;
     z-index: 0;
   }
+  .text__qs{
+    font-size: 0.2em;
+  }
+  .container__h2{
+    font-size: 0.5em;
+  }
 }
 
 /********@media mobil ********/
@@ -428,7 +364,7 @@ body {
 
   .title__banner.home {
     font-size: 1em;
-    top: 11%;
+    top: 12%;
     left: 60%;
     z-index: 0;
   }
@@ -450,12 +386,32 @@ body {
     left: 60%;
     z-index: 0;
   }
+  
+  .banner__qs__person__img{
+    width: 200% !important;
+    margin-left: 10% !important;
+    overflow: hidden !important;
+  }
+  .banner__qs__person__img__r{
+    width: 200% !important;
+    margin-right: 10% !important;
+    overflow: hidden !important;
+  }
+  .banner__qs__person__text{
+    padding: 5px 15px !important;
+  }
+  .text__qs{
+    font-size: 0.9em !important;
+  }
+  .container__h2{
+    font-size: 1.3em !important;
+  }
 }
-
+/****Final del header y Responsive****/
 /**** Final del Header ****/
 
 /**** Inicio del Main y Responsive ****/
-/**** Desde la linea 352 - 402
+/**** Desde la linea 423 - 472
 -->Title__banner: Titulo principal colocado de forma absoluta encima de la imagen,en tono aul con una pequeña sombra mas clarita y la letra en mayusculas y con mas grosor
 -->Main__container:centra el contenido del bloque completo.
 -->Row:centra el contenido del bloque de imagenes con un ancho del 80%.
@@ -464,7 +420,6 @@ body {
 -->Colum__img:hover:cuando esta en hover se hace una transformacion para que la imagen se haga mas grande.
 -->Responsive 600px /800px:hacer el responsive, a  800px se pone en dos columnas y en 600% se pone en una columna.
 ****/
-
 .title__banner {
   width: 30%;
   color: #3366cc;
@@ -514,54 +469,31 @@ body {
     max-width: 100%;
   }
 }
-
 /**** Final del Main ****/
 
-/**** Inicio del Footer y Responsive ****/
-/**** Desde la linea  
--->Test:
--->Footer__wrapper:
--->Footer__wrapper a:
--->Container__footer:
--->Footer__wrapper.social:hover:
--->Footer__wrapper.social:
--->Footer__wrapper #social-fb:hover:
--->Footer__wrapper #social-fb:hover:
--->footer__wrapper #social-tw:hover:
--->footer__wrapper #social-gp:hover:
--->footer__wrapper #social-em:hover:
--->#footer__copy:
-
-
+/**** Inicio del Footer****/
+/**** Desde la linea  485 - 517
+-->Footer__wrapper: color de fondo y un padding para darle altura.
+-->Footer__wrapper a:color principal de las redes sociales.
+-->Container__footer: colocacion del contenedor centrado.
+-->Footer__wrapper #social-fb:hover:cuando esta en hover cambia a color azul oscuro.
+-->footer__wrapper #social-tw:hover:cuando esta en hover cambia a color azul.
+-->footer__wrapper #social-gp:hover:cuando esta en hover se pone de color rojo anaranjado.
+-->footer__wrapper #social-em:hover:cuando hace hover cambia a amarillo.
+-->#footer__copy: id con cambio de estilo de letra,tamaño y color, centrado al centro y un ,margin.
 ****/
-/*.test{
-  width: 100%;
-}*/
 .footer__wrapper {
   background-color: #3366cc;
-  padding: 40px 0;
+  padding: 2.5rem 0;
 }
 .footer__wrapper a {
-  color: #333;
+  color: white;
 }
 .container__footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-}
-.footer__wrapper .social:hover {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -o-transform: scale(1.1);
-}
-.footer__wrapper .social {
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  -webkit-transition-duration: 0.5s;
-  -moz-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
 }
 .footer__wrapper #social-fb:hover {
   color: #3b5998;
@@ -582,7 +514,22 @@ body {
   font-style: italic;
   text-align: center;
 }
+/****Final del footer****/
+
+
 /****************Css quien somos*************/
+/****Inicio quien somos****/
+/**** Desde la linea  533-611
+-->Banner__qs:separacion de la img con el texto principal a traves de un margin.
+-->Main__container__qs: texto principal centrado con un 80% y un margin.
+-->Text__qs: cambio de la fuente de la letra y un paddin
+-->Banner__qs__person:  separacion con el texto de arriba atraves de un margin,colocacion atraves de un display-flex y un fondo degrdado azul.
+-->Banner__qs__person__r: separacion con el footer atraves de un margin,colocacion atraves de un display flex y un fondo degrado en tonos azules.
+-->Banner__qs__person__img :imagen con un ancho del 40%,un margen a la izquierda del 15% y un overflow- hidden para que no se desborde.
+-->Banner__qs__person__img__r: mismos cambios que la imagen anterior pero a la inversa.
+-->Banner__qs__person__title:cambio en el tamaño de la letra y el grosor.
+-->banner__qs__person__text:colocacion del texto con un paddin.
+****/
 .banner__qs {
   margin-bottom: 3em;
 }
@@ -596,7 +543,6 @@ body {
 }
 .banner__qs__person {
   margin-top: 3em;
-  height: 350px;
   display: flex;
   flex-direction: row;
   background: rgb(51, 102, 204);
@@ -620,10 +566,7 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
 }
-
 .banner__qs__person__r {
-  /* margin-top: 3em; */
-  height: 350px;
   display: flex;
   flex-direction: row;
   margin-bottom: 3em;
@@ -648,24 +591,45 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
 }
-
 .banner__qs__person__img {
-  /* border: 3px solid rebeccapurple; */
   overflow: hidden;
   margin-left: 15%;
   width: 40%;
 }
 .banner__qs__person__img__r {
-  /* border: 3px solid rebeccapurple; */
   overflow: hidden;
   margin-right: 15%;
-  width: 60%;
+  width: 50%;
+}
+.banner__qs__person__title{
+  font-size: 2.2em;
+  font-weight: 800 ;
 }
 .banner__qs__person__text {
-  padding: 10%;
+  padding: 3.125rem 9.375rem;
 }
+/****Final de quien somos****/
+
 
 /****************Css destinos******************/
+/**** Desde la linea 615-724
+-->Main__container__destinos: contenedor principal centrado con un ancho del 80& un margin auto y un display flex .
+-->Container__content: cambio del tamaño de letra y separacion entre los parrafos.
+-->Slider__destinos: ancho minimo para el tañamo del slider,con un borde redondeado, centrado con un margin , un overflow para que no desborde y una posicion relativa para los botones.
+-->Slider__container: posicion relativa al contenedor.
+-->Slider__img: aplico una posicion estatica.
+-->Slider__img.isactive: opacidad para que se vean las imagenes.
+-->Slider__img:nth-child: aplico una posicion estatica a todos los hijos directos.
+-->Slider__button: ancho y alto de los botones en color azul, en forma redondeada al 50%,posicion absoluta para ponerlo superpuesta en la imagen,calculo la posicion y meto un transform y un transition para cuando clickas.
+-->Slider__button:hover: cuando hace hover cambia la escala de la tranform.
+-->Slider__button:active: cuando esta active cambia la escala de la transform.
+-->Slider__button.prev: posicion boton izquierdo.
+-->Slider__button.next:posicion boton derecho.
+-->Slider__ul: colocacion centrada de los puntos con posicion absulata superpuesta a la img, con una separacion entre los mismos y un flex.
+-->Slider__punto:tamaño de los puntos, con forma redona, borde negro con un transform con una scala de 1 y un transition.
+-->Slider__punto:hover: cuando hace hover cambia la tranform y cambia el color de los puntos de azul a blanco.
+-->Slider__punto.isActive: cuando esta isactive cambia al color azul.
+****/
 .main__container__destinos {
   width: 80%;
   margin: auto;
@@ -673,9 +637,13 @@ body {
   flex-wrap: wrap;
   justify-content: center;
 }
+.container__content{
+  padding-bottom: 1.25rem;
+}
 .slider__destinos {
   max-width: 400px;
   margin: auto;
+  margin-bottom: 3em;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
@@ -701,12 +669,10 @@ body {
   width: 2.5rem;
   height: 2.5rem;
   background-color: #3366cc;
-
   border-radius: 50%;
   position: absolute;
   padding: 0.8rem;
   top: calc(50% - 1.5rem);
-
   cursor: pointer;
   transform: scale(1);
   transition: all 0.5s ease;
@@ -723,22 +689,16 @@ body {
 .slider__button.next {
   right: 3%;
 }
-.slider__svg {
-}
 .slider__ul {
   width: 100%;
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   gap: 1rem;
-
   position: absolute;
   bottom: 0;
   left: 0;
-}
-.slider__li {
 }
 .slider__punto {
   width: 0.5rem;
@@ -761,8 +721,16 @@ body {
 .slider__punto.isActive {
   background-color: #3366cc;
 }
-/******* Css Actividades*******/
+/****Final de Destinos****/
 
+
+/******* Css Actividades*******
+/**** Desde la linea 734 - 755
+-->Container__h2:cambia el titulo a mayusculas, el color, el tamaño y el ancho del mismo y le aplica un margin de separacion.
+-->Main__container__actividades: colocacion del contenedor atraves de un flex, un margin y un ancho del 80%.
+-->Container__content:tamano d ela letra y separacion entre parrafos.
+-->Container__img:le aplica un ancho a la imagen, un margen de separacion por abajo y lo centra.
+****/
 .container__h2 {
   color: #3366cc;
   font-size: 3.5rem;
@@ -784,10 +752,15 @@ body {
 .container__img {
   width: 50%;
   justify-content: center;
-  margin: 1rem 0;
+  margin-bottom: 3em;
 }
+/****Final de actividades****/
 
 /**** Css recomendaciones ****/
+/**** Desde la linea 764 - 782
+-->Main__container__recomendaciones: contenedor con un ancho del 80% y colocacion a traves de un margin y un display al centro.
+-->Title__banner__recomendaciones:titulo puesto en absolute para sobreponerlo en la img,cambio de la letra el ancho ,la posicion y el color.
+****/
 .main__container__recomendaciones {
   width: 80%;
   margin: auto;
@@ -808,18 +781,34 @@ body {
 }
 /**** Css Actividades ****/
 
-/**********css pagina de contacto********/
 
-/**** Al iframe le quite los estilos que venian predefinidos y le he aplicado un 80% de ancho,
- una altura de 400px y margin top para separarlo del menu****/
-/**** ****/
+/**********css pagina de contacto********/
+/**** Desde la linea 797 -843
+-->Iframe:le mete el ancho, el alto y el margin 
+-->Main__container__form: centra el container con un flex
+--Container__form: aplica un margin 
+-->Form:aplica estilos a la caja del formulario 
+-->Form__p:aplica el estilo dentro de la caja del formulario
+-->Form__p input:crea los estilos del imput
+-->Form__p textareacrea los estilos del textarea
+-->form__button:crea los estilos del boton de enviar
+-->
+****/
 iframe {
   width: 80%;
   height: 400px;
   margin-top: 2em;
 }
-/**** ****/
-.main__container .form {
+.main__container__form{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+}
+.container__form{
+  margin: .3125rem;
+}
+.form {
   width: 275px;
   height: 320px;
   margin: 2em;
@@ -838,7 +827,7 @@ iframe {
   border-radius: 1rem;
   margin: 0.6rem 1.9rem;
 }
-.form__p textarea {
+*form__p textarea {
   border: solid #3366cc 0.2px;
   border-radius: 1rem;
   margin: 0.6rem 1.9rem;

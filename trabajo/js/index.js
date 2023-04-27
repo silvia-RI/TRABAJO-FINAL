@@ -1,13 +1,16 @@
 /*******funcion formulario*****/
+/****Cuando haces click en enviar, sale una pantalla con el texto escrito */
 
 function enviarformulario(){
     alert("tu solicitud a sido enviada,nos pondremos en contacto con usted a la mayor brevedad");
 }
+/**** Final funcion formulario****/
 
 
 /**********funciones slider destinos*******/
+/****Crea varios slider en la misma pagina con seis fotos cada uno  ****/
 
-const destinos = ['alaska', 'playa', 'montana'];
+const destinos = ['nieve', 'playa', 'montana'];
 
 destinos.forEach(function(destino){
     let contador = 0;
@@ -79,5 +82,6 @@ destinos.forEach(function(destino){
         });
     });
 });
+/****Final slaider ****/
 
 
