@@ -18,31 +18,27 @@
     <!--El Header esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
        tambien esta adaptado a responsive, con un input, un label y un div button,
        despues meto el logo de la pagina con una etiqueta de img -->
-    <section class="header__nav">
+    <header class="header__nav">
       <div>
         <a href="index.html">
-          <img
-            class="logo__img"
-            src="assets/Logo/logo-peluditos.png "
-            alt="logo"
-        /></a>
+          <img class="logo__img" src="assets/Logo/logo-peluditos.png " loading="lazy" alt="logo" /></a>
       </div>
       <input id="menu__toggle" type="checkbox" />
       <label class="menu__button__container" for="menu__toggle">
         <div class="menu__button"></div>
       </label>
       <ul class="menu menu__nav">
-        <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-        <li class="menu__li"><a href="actividades.html">Actividades</a></li>
+        <li class="menu__li"><a href="destinos.html" title="destinos">Destinos</a></li>
+        <li class="menu__li"><a href="actividades.html" title="actividades">Actividades</a></li>
         <li class="menu__li active">
-          <a href="quiensomos.html">Quien somos</a>
+          <a href="quiensomos.html" title="quiensomos">Quien somos</a>
         </li>
         <li class="menu__li">
-          <a href="recomendaciones.html">Recomendaciones</a>
+          <a href="recomendaciones.html" title="recomendaciones">Recomendaciones</a>
         </li>
-        <li class="menu__li"><a href="contactos.html">Contactos</a></li>
+        <li class="menu__li"><a href="contactos.html" title="contactos">Contactos</a></li>
       </ul>
-    </section>
+    </header>
     <!--final del header-->
 
     
@@ -51,8 +47,8 @@
     y dos contenedores finales div, con un titulo cada uno metido en h2 y dos img  -->
     <main>
       <div class="banner__qs">
-        <h1 class="title__banner qs">"Os presento a mis humanos"</h1>
-        <img src="assets/Img QS/Banner-QS.jpg" alt="familia" />
+        <h1 class="title__banner__qs">"Os presento a mis humanos"</h1>
+        <img src="assets/Img QS/Banner-QS.jpg" loading="lazy" alt="familia" />
       </div>
       <div class="main__container__qs">
         <p class="text__qs">
@@ -124,18 +120,18 @@
         />
         <div class="container__footer">
           <a href="#0"
-            ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i
+            ><i id="social-fb" class="fa-brands fa-facebook fa-2xl" title="facebook"></i
           ></a>
           <a href="#0"
-            ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i
+            ><i id="social-tw" class="fa-brands fa-twitter fa-2xl" title="twitter"></i
           ></a>
           <a href="#0"
-            ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i
+            ><i id="social-gp" class="fa-brands fa-google fa-2xl" title="google"></i
           ></a>
           <a href="mailto:#"
             ><i
               id="social-em"
-              class="fa-sharp fa-regular fa-envelope fa-2xl"
+              class="fa-sharp fa-regular fa-envelope fa-2xl" title="correo"
             ></i
           ></a>
         </div>

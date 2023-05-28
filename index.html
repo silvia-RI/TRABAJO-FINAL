@@ -18,7 +18,7 @@
     <!--El Header esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
        tambien esta adaptado a responsive, con un input, un label y un div button,
        despues meto el logo de la pagina con una etiqueta de img -->
-    <section class="header__nav">
+    <header class="header__nav">
       <div>
         <a href="index.html">
           <img
@@ -32,15 +32,15 @@
         <div class="menu__button"></div>
       </label>
       <ul class="menu menu__nav">
-        <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-        <li class="menu__li"><a href="actividades.html">Actividades</a></li>
-        <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
+        <li class="menu__li"><a href="destinos.html" title="destinos">Destinos</a></li>
+        <li class="menu__li"><a href="actividades.html " title="actividades">Actividades</a></li>
+        <li class="menu__li"><a href="quiensomos.html" title="quiensomos">Quien somos</a></li>
         <li class="menu__li">
-          <a href="recomendaciones.html">Recomendaciones</a>
+          <a href="recomendaciones.html" title="recomendaciones">Recomendaciones</a>
         </li>
-        <li class="menu__li"><a href="contactos.html">Contactos</a></li>
+        <li class="menu__li"><a href="contactos.html" title="contactos">Contactos</a></li>
       </ul>
-    </section>
+    </header>
     <!--final del header-->
 
 
@@ -50,7 +50,7 @@
         de la pagina, cada imagen deriva a la pagina de destinos con un a href-->
     <main>
       <div class="banner__home">
-        <h1 class="title__banner home">
+        <h1 class="title__banner__home">
           "Nunca viajar con mis humanos fue tan facil"
         </h1>
         <img
@@ -64,28 +64,28 @@
           <div class="column">
             <a href="destinos.html">
               <img class="column__img" src="assets/Img home/galeria1.2.jpg" title="playa" alt="playa" />
-              <img class="column__img" src="assets/Img home/galeria2.4.jpg" title="alaska" alt="nieve" />
+              <img class="column__img" src="assets/Img home/galeria2.4.jpg" title="nieve" alt="nieve" />
               <img class="column__img" src="assets/Img home/galeria1.3.jpg" title="playa" alt="playa"
             /></a>
           </div>
           <div class="column">
             <a href="destinos.html">
-              <img  class="column__img" src="assets/Img home/galeria2.6.jpg" title="alaska" alt="nieve" />
+              <img  class="column__img" src="assets/Img home/galeria2.6.jpg" title="nieve" alt="nieve" />
               <img class="column__img" src="assets/Img home/galeria1.4.jpg" title="playa" alt="playa" />
-              <img class="column__img" src="assets/Img home/galeria2.7.jpg" title="alaska" alt="nieve"
+              <img class="column__img" src="assets/Img home/galeria2.7.jpg" title="nieve" alt="nieve"
             /></a>
           </div>
           <div class="column">
             <a href="destinos.html">
               <img class="column__img" src="assets/Img home/galeria1.8.jpg"title="playa" alt="playa" />
-              <img  class="column__img" src="assets/Img home/galeria2.8.jpg" title="alaska" alt="nieve" />
+              <img  class="column__img" src="assets/Img home/galeria2.8.jpg" title="nieve" alt="nieve" />
               <img class="column__img"  src="assets/Img home/galeria1.9.jpg" title="playa" alt="playa"
             /></a>
           </div>
           <div class="column">
             <a href="destinos.html">
               <img class="column__img" src="assets/Img home/galeria2.2.jpg" title="playa" alt="playa" />
-              <img  class="column__img" src="assets/Img home/galeria1.6.jpg"title="alaska" alt="nieve" />
+              <img  class="column__img" src="assets/Img home/galeria1.6.jpg"title="nieve" alt="nieve" />
               <img class="column__img" src="assets/Img home/galeria2.1.jpg" title="playa" alt="playa"
             /></a>
           </div>
@@ -100,14 +100,13 @@
      pero si cambia el estilo  y meto un id con un pequeño parrafo de que la pagina a sido creada por mi-->
     <footer>
       <div class="footer__wrapper">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-        <div class="container__footer">
-          <a href="#0" ><i id="social-fb" class="fa-brands fa-facebook fa-2xl"></i ></a>
-          <a href="#0" ><i id="social-tw" class="fa-brands fa-twitter fa-2xl"></i ></a>
-          <a href="#0" ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i ></a>
-          <a href="mailto:#" ><i id="social-em" class="fa-sharp fa-regular fa-envelope fa-2xl" ></i></a>
-        </div>
-        <p id="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
+        <ul class="footer__rrss ">
+          <li class="footer__facebook"><img src="   https://cdn-icons-png.flaticon.com/512/3128/3128208.png"  height ="30" alt="" title="facebook icono gratis"></a> </li>
+          <li class="footer__twitter"><img src="   https://cdn-icons-png.flaticon.com/512/733/733635.png" height="30" alt="" title="twiter" class="img-small"></li>
+          <li class="footer__youtube"><img src="   https://cdn-icons-png.flaticon.com/512/733/733646.png "  height="30" alt="" title="youtube" class="img-small"></li>
+          <li class="footer__instagram"><img src="   https://cdn-icons-png.flaticon.com/512/1384/1384031.png "  height="30" alt="" title="" class="img-small"></li>
+        </ul>
+        <p class="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
       </div>
     </footer>
     <!--final del footer-->

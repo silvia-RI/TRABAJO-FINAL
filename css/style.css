@@ -174,7 +174,7 @@ body {
 }
 .header__nav {
   color: #fff;
-  height: 50px;
+  height: 3.125rem;
   padding: 1em;
   margin: 1em 0;
   display: flex;
@@ -184,7 +184,7 @@ body {
 }
 .menu__button__container {
   height: 100%;
-  width: 30px;
+  width: 1.875rem;
   cursor: pointer;
   display: none;
   flex-direction: column;
@@ -198,26 +198,26 @@ body {
 .menu__button,
 .menu__button::before,
 .menu__button::after {
-  height: 4px;
-  width: 30px;
+  height: .25rem;
+  width: 1.875rem;
   display: block;
-  background-color: #000;
+  background-color: black;
   position: absolute;
-  border-radius: 2px;
+  border-radius: .125rem;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 .menu__button::before {
   content: "";
-  margin-top: -8px;
+  margin-top: -0.5rem;
 }
 
 .menu__button::after {
   content: "";
-  margin-top: 8px;
+  margin-top: .5rem;
 }
 
 #menu__toggle:checked + .menu__button__container .menu__button::before {
-  margin-top: 0px;
+  margin-top: 0rem;
   transform: rotate(405deg);
 }
 
@@ -225,7 +225,7 @@ body {
   background: rgba(255, 255, 255, 0);
 }
 #menu__toggle:checked + .menu__button__container .menu__button::after {
-  margin-top: 0px;
+  margin-top: 0rem;
   transform: rotate(-405deg);
 }
 .menu__nav {
@@ -246,7 +246,7 @@ body {
   color: #3366cc;
 }
 .menu__li.active {
-  border-bottom: 2px solid #3366cc;
+  border-bottom: .125rem solid #3366cc;
   padding-bottom: 0.6em;
   opacity: 1;
 }
@@ -259,7 +259,7 @@ body {
   }
   .menu {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -277,39 +277,39 @@ body {
   }
   #menu__toggle:checked ~ .menu li {
     height: 2.5em;
-    border: 1px solid #333;
+    border: .0625rem solid wheat;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
   .menu > li {
     width: 100%;
-    color: #3366cc;
-    background-color: #222;
+    color: white;
+    background-color:#3366cc ;
     margin: 0;
     padding: 0.5em 0;
     display: flex;
     justify-content: center;
   }
 
-  .title__banner.home {
+  .title__banner__home {
     font-size: 1.2em;
     top: 15%;
     left: 60%;
     z-index: 0;
   }
-  .title__banner.actividades {
+  .title__banner__actividades {
     font-size: 1.2em;
     top: 20%;
     left: 60%;
     z-index: 0;
   }
-  .title__banner.recomendaciones {
+  .title__banner__recomendaciones {
     font-size: 1.2em;
     top: 10%;
     left: 60%;
     z-index: 0;
   }
-  .title__banner.qs {
+  .title__banner__qs {
     font-size: 1.2em;
     top: 20%;
     left: 60%;
@@ -330,7 +330,7 @@ body {
   }
   .menu {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3.125rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -348,7 +348,7 @@ body {
   }
   #menu__toggle:checked ~ .menu li {
     height: 2.5em;
-    border: 1px solid #333;
+    border: .0625rem solid #333;
     padding: 0.5em;
     transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
   }
@@ -362,25 +362,25 @@ body {
     justify-content: center;
   }
 
-  .title__banner.home {
+  .title__banner__home {
     font-size: 1em;
     top: 12%;
     left: 60%;
     z-index: 0;
   }
-  .title__banner.actividades {
+  .title__banner__actividades {
     font-size: 1.2em;
     top: 20%;
     left: 60%;
     z-index: 0;
   }
-  .title__banner.recomendaciones {
+  .title__banner__recomendaciones {
     font-size: 1.2em;
     top: 10%;
     left: 68%;
     z-index: 0;
   }
-  .title__banner.qs {
+  .title__banner__qs {
     font-size: 1.2em;
     top: 11%;
     left: 60%;
@@ -398,7 +398,7 @@ body {
     overflow: hidden !important;
   }
   .banner__qs__person__text{
-    padding: 5px 15px !important;
+    padding: .3125rem .9375rem !important;
   }
   .text__qs{
     font-size: 0.9em !important;
@@ -406,6 +406,7 @@ body {
   .container__h2{
     font-size: 1.3em !important;
   }
+  
 }
 /****Final del header y Responsive****/
 /**** Final del Header ****/
@@ -420,7 +421,7 @@ body {
 -->Colum__img:hover:cuando esta en hover se hace una transformacion para que la imagen se haga mas grande.
 -->Responsive 600px /800px:hacer el responsive, a  800px se pone en dos columnas y en 600% se pone en una columna.
 ****/
-.title__banner {
+.title__banner__home {
   width: 30%;
   color: #3366cc;
   font-size: 3.5em;
@@ -432,6 +433,7 @@ body {
   text-shadow: 1px 3px 12px #96b5f5;
   z-index: 1;
 }
+
 
 .main__container {
   display: flex;
@@ -486,31 +488,61 @@ body {
   background-color: #3366cc;
   padding: 2.5rem 0;
 }
-.footer__wrapper a {
+.footer__wrapper  {
   color: white;
 }
-.container__footer {
+.footer__rrss {
+  color:white;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap:0.8rem;
 }
-.footer__wrapper #social-fb:hover {
-  color: #3b5998;
+.footer__facebook{
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+
 }
-.footer__wrapper #social-tw:hover {
-  color: #4099ff;
+.footer__facebook:hover {
+  background-color:#3B5998;
+  transform: scale(1.25, 1.25);
+  cursor:pointer;
 }
-.footer__wrapper #social-gp:hover {
-  color: #d34836;
+.footer__twitter{
+  background-color: white;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
 }
-.footer__wrapper #social-em:hover {
-  color: #f39c12;
+.footer__twitter:hover {
+  background-color: #4099ff;
+  transform: scale(1.25, 1.25);
+  cursor:pointer;
 }
-#footer__copy {
+.footer__youtube{
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.footer__youtube:hover {
+  background-color: #d34836;
+  transform: scale(1.25, 1.25);
+  cursor:pointer;
+}
+.footer__instagram{
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+.footer__instagram:hover {
+  background-color: #8134AF;
+  transform: scale(1.25, 1.25);
+  cursor:pointer;
+}
+.footer__copy {
   color: white;
   margin-top: 1em;
-  font-size: 20px;
+  font-size: 1rem;
   font-style: italic;
   text-align: center;
 }
@@ -532,6 +564,19 @@ body {
 ****/
 .banner__qs {
   margin-bottom: 3em;
+}
+.title__banner__qs{
+  width: 30%;
+  color: #3366cc;
+  font-size: 3.5em;
+  font-weight: 800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-shadow: 1px 3px 12px #96b5f5;
+  z-index: 1;
+
 }
 .main__container__qs {
   width: 80%;
@@ -591,6 +636,7 @@ body {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
 }
+
 .banner__qs__person__img {
   overflow: hidden;
   margin-left: 15%;
@@ -641,7 +687,7 @@ body {
   padding-bottom: 1.25rem;
 }
 .slider__destinos {
-  max-width: 400px;
+  max-width: 25rem;
   margin: auto;
   margin-bottom: 3em;
   border-radius: 2rem;
@@ -705,7 +751,7 @@ body {
   height: 0.5rem;
 
   border-radius: 50%;
-  border: 2px solid black;
+  border: .125rem solid black;
   transform: scale(1);
   transition: all 0.5s ease;
 
@@ -737,6 +783,19 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin: 1rem 0;
+}
+.title__banner__actividades{
+  width: 30%;
+  color: #3366cc;
+  font-size: 3.5em;
+  font-weight: 800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-shadow: 1px 3px 12px #96b5f5;
+  z-index: 1;
+
 }
 .main__container__actividades {
   width: 80%;
@@ -777,7 +836,7 @@ body {
   position: absolute;
   top: 20%;
   left: 60%;
-  text-shadow: 1px 3px 12px #96b5f5;
+  text-shadow: .0625rem .1875rem .75rem #96b5f5;
 }
 /**** Css Actividades ****/
 
@@ -794,9 +853,9 @@ body {
 -->form__button:crea los estilos del boton de enviar
 -->
 ****/
-iframe {
+.main__maps {
   width: 80%;
-  height: 400px;
+  height: 25rem;
   margin-top: 2em;
 }
 .main__container__form{
@@ -809,25 +868,25 @@ iframe {
   margin: .3125rem;
 }
 .form {
-  width: 275px;
-  height: 320px;
+  width: 17.1875rem;
+  height: 20rem;
   margin: 2em;
-  border: solid #3366cc 2.2px;
+  border: solid #3366cc .1375rem;
   font-size: 1.2em;
-  border-radius: 15px;
+  border-radius: .9375rem;
 }
-.form__p {
+.form__label {
   width: 100%;
-  border-bottom: 0.2px solid #3366cc;
+  border-bottom: 0.0125rem solid #3366cc;
   padding: 1rem 0 0 1rem;
   margin: 1em 0;
 }
-.form__p input {
-  border: solid #3366cc 0.2px;
+.form__label input {
+  border: solid #3366cc 0.0125rem;
   border-radius: 1rem;
   margin: 0.6rem 1.9rem;
 }
-*form__p textarea {
+.form__label textarea {
   border: solid #3366cc 0.2px;
   border-radius: 1rem;
   margin: 0.6rem 1.9rem;
@@ -835,7 +894,7 @@ iframe {
 .form__button {
   background-color: #d9e5fe;
 
-  border: 0.4px solid grey;
+  border: 0.025rem solid grey;
   margin: 0.4rem 1.7rem;
   padding: 0.3rem 1.5rem;
   border-radius: 1.8rem;

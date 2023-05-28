@@ -18,23 +18,23 @@
     <!--El Header esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
        tambien esta adaptado a responsive, con un input, un label y un div button,
        despues meto el logo de la pagina con una etiqueta de img -->
-       <section class="header__nav">
+       <header class="header__nav">
         <div>
           <a href="index.html">
-          <img class="logo__img" src="assets/Logo/logo-peluditos.png " alt="logo"/></a>
+          <img class="logo__img" src="assets/Logo/logo-peluditos.png " loading="lazy" alt="logo"/></a>
         </div>
         <input id="menu__toggle" type="checkbox" />
         <label class='menu__button__container' for="menu__toggle">
         <div class='menu__button'></div>
       </label>
         <ul class="menu menu__nav">
-          <li class="menu__li"><a href="destinos.html">Destinos</a></li>
-          <li class="menu__li"><a href="actividades.html">Actividades</a></li>
-          <li class="menu__li"><a href="quiensomos.html">Quien somos</a></li>
-          <li class="menu__li active"><a href="recomendaciones.html">Recomendaciones</a></li>
-          <li class="menu__li"><a href="contactos.html">Contactos</a></li>
+          <li class="menu__li"><a href="destinos.html" title="destinos">Destinos</a></li>
+          <li class="menu__li"><a href="actividades.html" title="actividades">Actividades</a></li>
+          <li class="menu__li"><a href="quiensomos.html" title="quiensomos">Quien somos</a></li>
+          <li class="menu__li active"><a href="recomendaciones.html" title="recomendaciones">Recomendaciones</a></li>
+          <li class="menu__li"><a href="contactos.html" title="contactos">Contactos</a></li>
         </ul>
-      </section>
+      </header>
     <!--Final del header-->
 
     
@@ -43,37 +43,37 @@
       con sus respectivos h2 y clases p, e img descriptivas de las mismas-->
     <main>    
       <div class="banner__recomendaciones">
-        <h1 class="title__banner recomendaciones">"Recordar nuestra maleta"</h1>
-        <img src="assets/Img Recomendaciones/perros-gatos.jpg" alt="familia">
+        <h1 class="title__banner__recomendaciones">"Recordar nuestra maleta"</h1>
+        <img src="assets/Img Recomendaciones/perros-gatos.jpg" loading="lazy" alt="familia">
       </div>
       <div class="main__container__recomendaciones">
         <h2 class="container__h2">1. Mejor prevenir que curar</h2>
         <p class="container__content">Antes de viajar con tu mascota, has de asegurarte de que está todo en regla. Esto va desde su documentación, asegurandonos de que está todo correcto y al dia, hasta sus vacunas, ¡no olvides que ellos también enferman!
           Si tu hijo canino es muy nervioso, acude al veterinario antes de un largo viaje. Estos pueden estresarlos y afectar a su salud, y es mejor preguntar por soluciones y alternativas antes de saltar a la piscina.</p>
-        <img class="container__img" src="assets/Img Recomendaciones/pasaporte.jpg" alt="1.4">
+        <img class="container__img" src="assets/Img Recomendaciones/pasaporte.jpg" loading="lazy" alt="1.4">
       </div>
       <div class="main__container__recomendaciones">
         <h2 class="container__h2"> 2. Durante el trayecto.</h2>
         <p class="container__content">Si el viaje se realizará en coche, no olvides revisar la normativa de carrereteras. Tu mascota debe viajar en unas condiciones que sean seguras, tanto para ellos, como para ti. 
           No olvides hacer las paradas necesarias, los viajes siempre son estresantes para todos, y nunca viene mal un descanso para beber un poquito y estirar las piernas (y patas). Nosotros tenemos nuestras necesidades, pero ellos también.</p>
-        <img class="container__img" src="assets/Img Recomendaciones/cinturon segu.jpg" alt="1.4">
+        <img class="container__img" src="assets/Img Recomendaciones/cinturon segu.jpg" loading="lazy" alt="1.4">
       </div>
       <div class="main__container__recomendaciones">
         <h2 class="container__h2">3. ¡Hemos llegado!</h2>
         <p class="container__content">Deja que tu perro huela y se familiarice con la zona de residencia. Necesita conocer los nuevos olores para poder disfrutar de las vacaciones tanto como tu.
            Si viajas con tu gato, debes elegir una zona en la que dejar su transportin y sus enseres. Este sera su refugio, y probablemente donde pase mas tiempo los primeros dias. Ellos también tienen que asentarse y descansar del largo viaje.</p>
-        <img class="container__img" src="assets/Img Recomendaciones/transportin2.jpg" alt="1.4">
+        <img class="container__img" src="assets/Img Recomendaciones/transportin2.jpg" loading="lazy" alt="1.4">
       </div>
       <div class="main__container__recomendaciones">
         <h2 class="container__h2">4. Viaja seguro.
         </h2>
         <p class="container__content">Aunque tomemos todas las precauciones, siempre hay situaciones que nos superan, distracciones demasiado llamativas, y cosas mas interesantes que perseguir. Lleva siempre asegurada a tu mascota, con su microchip y la tarjeta que lo acredite. Esto puede marcar la diferencia entre una anecdota y una tragedia.</p>
-        <img class="container__img" src="assets/Img Recomendaciones/cartilla.jpeg" alt="1.4">
+        <img class="container__img" src="assets/Img Recomendaciones/cartilla.jpeg" loading="lazy" alt="1.4">
       </div>
       <div class="main__container__recomendaciones">
         <h2 class="container__h2">5. Cuidado con las temperaturas</h2>
         <p class="container__content">Nuestras mascotas, a diferencia de nosotros no usan zapatos. Por ello, cambios muy drasticos de temperatura pueden ser muy dañinos para sus patitas. Carga siempre cerca una pomada termo-resistente, y todos lo agradecereis.</p>
-        <img class="container__img" src="assets/Img Recomendaciones/perrito-crema-pata1.jpg" alt="1.4">
+        <img class="container__img" src="assets/Img Recomendaciones/perrito-crema-pata1.jpg" loading="lazy" alt="1.4">
       </div>
     </main>
     <!--final del main-->
@@ -85,12 +85,12 @@
     <footer>
       <div class="footer__wrapper">
         
-        <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <div class="container__footer">
-          <a href="#0"><i id="social-fb" class="fa-brands fa-facebook  fa-2xl"></i></a>
-          <a href="#0"><i id="social-tw" class="fa-brands fa-twitter  fa-2xl"></i></a>
-          <a href="#0" ><i id="social-gp" class="fa-brands fa-google fa-2xl"></i></a>
-          <a href="mailto:#"><i id="social-em" class="fa-sharp fa-regular fa-envelope fa-2xl "></i></a>
+          <a href="#0"><i id="social-fb" class="fa-brands fa-facebook  fa-2xl" title="facebook"></i></a>
+          <a href="#0"><i id="social-tw" class="fa-brands fa-twitter  fa-2xl" title="twitter"></i></a>
+          <a href="#0" ><i id="social-gp" class="fa-brands fa-google fa-2xl" title="google"></i></a>
+          <a href="mailto:#"><i id="social-em" class="fa-sharp fa-regular fa-envelope fa-2xl" title="correo"></i></a>
         </div>
         <p id="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
       </div>
