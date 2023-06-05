@@ -1,9 +1,10 @@
 /*******funcion formulario*****/
 /****Cuando haces click en enviar, sale una pantalla con el texto escrito */
 
-function enviarformulario(){
+const formButton = document.querySelector('.form__button');
+formButton.addEventListener('click', () => {
     alert("tu solicitud a sido enviada,nos pondremos en contacto con usted a la mayor brevedad");
-}
+});
 /**** Final funcion formulario****/
 
 
