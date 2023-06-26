@@ -8,11 +8,6 @@
   vertical-align: baseline;
 }
 
-
-
-
-
-
 /**** Evitamos problemas con las imagenes ****/
 img,
 picture,
@@ -135,8 +130,6 @@ body {
   -ms-hyphens: auto;
   hyphens: auto;
   /* opcional */
-  font-smooth: always;
-  /* opcional */
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
@@ -167,247 +160,66 @@ body {
 -->Test__qs:modifica el tamañno de la letra de los parrafos.
 -->Container__h2:modifica el tamaño de la letra de los titulos de los parrafos.
 ****/
-.logo__img {
-  width: auto;
-  padding-left: 13em;
-  margin: 1em 0;
-}
-.header__nav {
-  color: #fff;
-  height: 3.125rem;
-  padding: 1em;
-  margin: 1em 0;
+.top {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-}
-.menu__button__container {
-  height: 100%;
-  width: 1.875rem;
-  cursor: pointer;
-  display: none;
-  flex-direction: column;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
-  padding: 2em;
+  margin: 1em 0;
 }
-#menu__toggle {
+.logo__img {
+  padding-left: 10%;
+}
+.menu__toggle {
+  top: 0;
+  left: 0;
+}
+
+.menu__toggle__input {
   display: none;
 }
-.menu__button,
-.menu__button::before,
-.menu__button::after {
-  height: .25rem;
-  width: 1.875rem;
-  display: block;
-  background-color: black;
-  position: absolute;
-  border-radius: .125rem;
-  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
-}
-.menu__button::before {
-  content: "";
-  margin-top: -0.5rem;
-}
-
-.menu__button::after {
-  content: "";
-  margin-top: .5rem;
-}
-
-#menu__toggle:checked + .menu__button__container .menu__button::before {
-  margin-top: 0rem;
-  transform: rotate(405deg);
-}
-
-#menu__toggle:checked + .menu__button__container .menu__button {
-  background: rgba(255, 255, 255, 0);
-}
-#menu__toggle:checked + .menu__button__container .menu__button::after {
-  margin-top: 0rem;
-  transform: rotate(-405deg);
-}
-.menu__nav {
-  width: 80%;
+.menu {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  padding-top: 0;
+  background: transparent;
+  transform: none;
 }
 
-.menu > li {
-  margin: 0 1rem;
-  overflow: hidden;
+.nav__mobile {
+  display: none;
 }
+
+.main__menu {
+  margin-right: 10%;
+}
+
 .menu__li {
-  opacity: 0.8;
+  padding: 1rem 0.3rem;
+  position: relative;
+  margin: 0 1rem 1rem 0;
+  text-align: center;
+  width: auto;
+  border-bottom: 0;
+}
+
+.nav__element {
+  color: #3366ccbd;
+  font-size: 1em;
+  font-weight: 600;
+  display: flex;
+  text-transform: uppercase;
+  padding-bottom: 0.625em;
+}
+
+.nav__element:hover {
+  border-bottom: 0.188em solid #3366cc;
   color: #3366cc;
 }
-.menu__li.active {
-  border-bottom: .125rem solid #3366cc;
-  padding-bottom: 0.6em;
-  opacity: 1;
-}
 
-
-/****** @media tablet *****/
-@media (min-width: 480px) and (max-width: 1024px) {
-  .menu__button__container {
-    display: flex;
-  }
-  .menu {
-    width: 100%;
-    margin-top: 3.125rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #menu__toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu__toggle:checked ~ .menu li {
-    height: 2.5em;
-    border: .0625rem solid wheat;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    width: 100%;
-    color: white;
-    background-color:#3366cc ;
-    margin: 0;
-    padding: 0.5em 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .title__banner__home {
-    font-size: 1.2em;
-    top: 15%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner__actividades {
-    font-size: 1.2em;
-    top: 20%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner__recomendaciones {
-    font-size: 1.2em;
-    top: 10%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner__qs {
-    font-size: 1.2em;
-    top: 20%;
-    left: 60%;
-    z-index: 0;
-  }
-  .text__qs{
-    font-size: 0.2em;
-  }
-  .container__h2{
-    font-size: 0.5em;
-  }
-}
-
-/********@media mobil ********/
-@media (min-width: 280px) and (max-width: 479px) {
-  .menu__button__container {
-    display: flex;
-  }
-  .menu {
-    width: 100%;
-    margin-top: 3.125rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
-  #menu__toggle ~ .menu li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  #menu__toggle:checked ~ .menu li {
-    height: 2.5em;
-    border: .0625rem solid #333;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-  .menu > li {
-    width: 100%;
-    color: #3366cc;
-    background-color: #222;
-    margin: 0;
-    padding: 0.5em 0;
-    display: flex;
-    justify-content: center;
-  }
-
-  .title__banner__home {
-    font-size: 1em;
-    top: 12%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner__actividades {
-    font-size: 1.2em;
-    top: 20%;
-    left: 60%;
-    z-index: 0;
-  }
-  .title__banner__recomendaciones {
-    font-size: 1.2em;
-    top: 10%;
-    left: 68%;
-    z-index: 0;
-  }
-  .title__banner__qs {
-    font-size: 1.2em;
-    top: 11%;
-    left: 60%;
-    z-index: 0;
-  }
-  
-  .banner__qs__person__img{
-    width: 200% !important;
-    margin-left: 10% !important;
-    overflow: hidden !important;
-  }
-  .banner__qs__person__img__r{
-    width: 200% !important;
-    margin-right: 10% !important;
-    overflow: hidden !important;
-  }
-  .banner__qs__person__text{
-    padding: .3125rem .9375rem !important;
-  }
-  .text__qs{
-    font-size: 0.9em !important;
-  }
-  .container__h2{
-    font-size: 1.3em !important;
-  }
-  
-}
 /****Final del header y Responsive****/
 /**** Final del Header ****/
 
@@ -424,7 +236,7 @@ body {
 .title__banner__home {
   width: 30%;
   color: #3366cc;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 800;
   text-align: end;
   position: absolute;
@@ -433,7 +245,6 @@ body {
   text-shadow: 1px 3px 12px #96b5f5;
   z-index: 1;
 }
-
 
 .main__container {
   display: flex;
@@ -459,13 +270,13 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 50em) {
   .column {
     flex: 50%;
     max-width: 50%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 37.5em) {
   .column {
     flex: 100%;
     max-width: 100%;
@@ -488,56 +299,54 @@ body {
   background-color: #3366cc;
   padding: 2.5rem 0;
 }
-.footer__wrapper  {
+.footer__wrapper {
   color: white;
 }
 .footer__rrss {
-  color:white;
-  
+  color: white;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap:0.8rem;
+  gap: 0.8rem;
 }
-.footer__facebook{
+.footer__facebook {
   background-color: white;
   transition: all 0.5s ease-in-out;
-
 }
 .footer__facebook:hover {
-  background-color:#3B5998;
+  background-color: #3b5998;
   transform: scale(1.25, 1.25);
-  cursor:pointer;
+  cursor: pointer;
 }
-.footer__twitter{
+.footer__twitter {
   background-color: white;
   color: white;
   transition: all 0.5s ease-in-out;
-
 }
 .footer__twitter:hover {
   background-color: #4099ff;
   transform: scale(1.25, 1.25);
-  cursor:pointer;
+  cursor: pointer;
 }
-.footer__youtube{
+.footer__youtube {
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
 .footer__youtube:hover {
   background-color: #d34836;
   transform: scale(1.25, 1.25);
-  cursor:pointer;
+  cursor: pointer;
 }
-.footer__instagram{
+.footer__instagram {
   background-color: white;
   transition: all 0.5s ease-in-out;
 }
 .footer__instagram:hover {
-  background-color: #8134AF;
+  background-color: #8134af;
   transform: scale(1.25, 1.25);
-  cursor:pointer;
+  cursor: pointer;
 }
 .footer__copy {
   color: white;
@@ -547,7 +356,6 @@ body {
   text-align: center;
 }
 /****Final del footer****/
-
 
 /****************Css quien somos*************/
 /****Inicio quien somos****/
@@ -565,10 +373,10 @@ body {
 .banner__qs {
   margin-bottom: 3em;
 }
-.title__banner__qs{
+.title__banner__qs {
   width: 30%;
   color: #3366cc;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 800;
   text-align: end;
   position: absolute;
@@ -576,14 +384,13 @@ body {
   left: 60%;
   text-shadow: 1px 3px 12px #96b5f5;
   z-index: 1;
-
 }
 .main__container__qs {
   width: 80%;
   margin: auto;
 }
 .text__qs {
-  font-size: 1.5em;
+  font-size: 2em;
   padding: 0.3em 0;
 }
 .banner__qs__person {
@@ -610,8 +417,9 @@ body {
     rgba(217, 229, 254, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
+  padding: 2rem 0 0;
 }
-.banner__qs__person__r {
+.person__r {
   display: flex;
   flex-direction: row;
   margin-bottom: 3em;
@@ -635,27 +443,30 @@ body {
     rgba(217, 229, 254, 1) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#3366cc",endColorstr="#d9e5fe",GradientType=1);
+  padding: 2rem 0 0;
 }
 
-.banner__qs__person__img {
-  overflow: hidden;
-  margin-left: 15%;
-  width: 40%;
+.person__img {
+  margin-left: 20rem;
 }
-.banner__qs__person__img__r {
-  overflow: hidden;
-  margin-right: 15%;
-  width: 50%;
+.person__img--img {
+  width: max-content;
+  max-width: none;
 }
-.banner__qs__person__title{
-  font-size: 2.2em;
-  font-weight: 800 ;
+.person__img__r {
+  margin-right: 20rem;
 }
-.banner__qs__person__text {
+
+.person__title {
+  font-size: 2.8em;
+  font-weight: 800;
+  padding: 0 3em 0.2em;
+}
+.person__text__qs {
   padding: 3.125rem 9.375rem;
+  font-size: 2em;
 }
 /****Final de quien somos****/
-
 
 /****************Css destinos******************/
 /**** Desde la linea 615-724
@@ -676,23 +487,33 @@ body {
 -->Slider__punto:hover: cuando hace hover cambia la tranform y cambia el color de los puntos de azul a blanco.
 -->Slider__punto.isActive: cuando esta isactive cambia al color azul.
 ****/
+.title__banner__destinos {
+  width: 30%;
+  color: #3366cc;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  text-shadow: 1px 3px 12px #96b5f5;
+  z-index: 1;
+}
 .main__container__destinos {
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.container__content{
+.container__content {
   padding-bottom: 1.25rem;
 }
 .slider__destinos {
-  max-width: 25rem;
+  width: 60%;
   margin: auto;
   margin-bottom: 3em;
   border-radius: 2rem;
   overflow: hidden;
   position: relative;
+
 }
 .slider__container {
   position: relative;
@@ -746,12 +567,15 @@ body {
   bottom: 0;
   left: 0;
 }
+.slider__li{
+  padding-bottom: 1.5rem;
+}
 .slider__punto {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
 
   border-radius: 50%;
-  border: .125rem solid black;
+  border: 0.125rem solid black;
   transform: scale(1);
   transition: all 0.5s ease;
 
@@ -769,7 +593,6 @@ body {
 }
 /****Final de Destinos****/
 
-
 /******* Css Actividades*******
 /**** Desde la linea 734 - 755
 -->Container__h2:cambia el titulo a mayusculas, el color, el tamaño y el ancho del mismo y le aplica un margin de separacion.
@@ -783,11 +606,16 @@ body {
   font-weight: 800;
   text-transform: uppercase;
   margin: 1rem 0;
+  text-align: center;
 }
-.title__banner__actividades{
+.banner__actividades{
+  position: relative;
+
+}
+.title__banner__actividades {
   width: 30%;
   color: #3366cc;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 800;
   text-align: end;
   position: absolute;
@@ -795,23 +623,24 @@ body {
   left: 60%;
   text-shadow: 1px 3px 12px #96b5f5;
   z-index: 1;
-
 }
 .main__container__actividades {
   width: 80%;
   margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  ;
 }
 .container__content {
   font-size: 1.5rem;
   line-height: 1.5;
 }
 .container__img {
-  width: 50%;
+  display: flex;
   justify-content: center;
   margin-bottom: 3em;
+}
+
+.act__img{
+width: 50%;
 }
 /****Final de actividades****/
 
@@ -830,16 +659,25 @@ body {
 .title__banner__recomendaciones {
   width: 30%;
   color: #3366cc;
-  font-size: 3.5em;
+  font-size: 2.5em;
   font-weight: 800;
   text-align: end;
   position: absolute;
   top: 20%;
   left: 60%;
-  text-shadow: .0625rem .1875rem .75rem #96b5f5;
+  text-shadow: 0.0625rem 0.1875rem 0.75rem #96b5f5;
 }
-/**** Css Actividades ****/
 
+.container__img__recomendaciones {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  max-width: none;
+  margin-bottom: 3rem;
+
+}
+
+/**** Css Actividades ****/
 
 /**********css pagina de contacto********/
 /**** Desde la linea 797 -843
@@ -858,22 +696,33 @@ body {
   height: 25rem;
   margin-top: 2em;
 }
-.main__container__form{
+.title__banner__contactos{
+  width: 30%;
+  color: #3366cc;
+  font-size: 2.5em;
+  font-weight: 800;
+  text-align: end;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  text-shadow: 1px 3px 12px #96b5f5;
+  z-index: 1;
+}
+.main__container__form {
   display: flex;
   flex-direction: row;
   justify-content: center;
   justify-items: center;
 }
-.container__form{
-  margin: .3125rem;
+.container__form {
+  margin: 0.3125rem;
 }
 .form {
-  width: 17.1875rem;
   height: 20rem;
   margin: 2em;
-  border: solid #3366cc .1375rem;
+  border: solid #3366cc 0.1375rem;
   font-size: 1.2em;
-  border-radius: .9375rem;
+  border-radius: 0.9375rem;
 }
 .form__label {
   width: 100%;
@@ -887,7 +736,7 @@ body {
   margin: 0.6rem 1.9rem;
 }
 .form__label textarea {
-  border: solid #3366cc 0.2px;
+  border: solid #3366cc 0.0125rem;
   border-radius: 1rem;
   margin: 0.6rem 1.9rem;
 }
@@ -900,3 +749,258 @@ body {
   border-radius: 1.8rem;
 }
 /**** Final de Css Pagina de contactos****/
+
+/****** @media tablet *****/
+@media (min-width: 820px) and (max-width: 1300px) {
+  .top {
+    margin: 0;
+  }
+  .nav__element {
+    color: #3366cc;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding-bottom: 0;
+  }
+
+  .logo__img {
+    padding-left: 1em;
+  }
+  
+
+  .main__menu {
+    margin-right: 0.3em;
+  }
+
+  .menu__li {
+        margin: 0;
+    
+}
+  .title__banner__home {
+    font-size: 1.2em;
+    top: 15%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__actividades {
+    font-size: 1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__recomendaciones {
+    font-size: 1.2em;
+    top: 10%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__qs {
+    font-size: 1.2em;
+    top: 20%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__contactos{
+    font-size: 1.2em;
+    top: 10%;
+    left: 10%;
+    z-index: 0;
+
+  }
+  .title__banner__destinos{
+    font-size: 1.2em;
+    top: 12%;
+    left: 40%;
+    z-index: 0;
+
+  }
+  .text__qs {
+    font-size: 0.2em;
+  }
+  .container__h2 {
+    font-size: 1.3em;
+  }
+}
+
+/********@media mobil ********/
+@media (min-width: 250px) and (max-width: 819px) {
+  .top {
+    display: block;
+  }
+  .logo__img {
+    padding-left: 1em;
+  }
+  .logo__img img {
+    width: 8em;
+  }
+  .menu__toggle {
+    display: block;
+    position: relative;
+    top: 0.313em;
+    left: 3.25em;
+
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  .menu__toggle__input {
+    display: block;
+    width: 2.5em;
+    height: 2em;
+    position: absolute;
+    top: -0.438em;
+    left: -0.313em;
+
+    cursor: pointer;
+
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+  }
+
+  .nav__mobile {
+    display: block;
+    width: 1.25em;
+    height: 0.188em;
+    margin-bottom: 0.188em;
+    position: relative;
+    background: #3366cc;
+    color: #3366cc;
+    border-radius: 0.188em;
+
+    z-index: 1;
+
+    transform-origin: 0 0;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  }
+
+  .nav__mobile:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  .nav__mobile:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  .menu__toggle__input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-0.125em, -0.063em);
+    background: #3366cc;
+  }
+
+  .menu__toggle__input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  .menu__toggle__input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -0.063em);
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    width: 18.75em;
+    margin: -1.438em 0 0 -3.125em;
+    padding: 3.125em;
+    padding-top: 1.25em;
+    background: #e5e5e5e0;
+    opacity: 1;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  }
+
+  .nav__element {
+    font-size: 0.6em;
+  }
+  .main__menu {
+    margin-right: 0;
+  }
+
+  .menu__li {
+    padding: 0.5em 1em 0.5em;
+    border-bottom: 0.125em solid #d7d7d7;
+    margin: 0;
+  }
+
+  .menu__toggle__input:checked ~ ul {
+    transform: none;
+  }
+
+  .title__banner__home {
+    font-size: 0.8em;
+    top: 12%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__destinos {
+    font-size: 1em;
+    top: 12%;
+    left: 50%;
+    z-index: 0;
+  }
+  .title__banner__actividades {
+    font-size: 0.8em;
+    top: 10%;
+    left: 50%;
+    z-index: 0;
+  }
+  .title__banner__recomendaciones {
+    font-size: 0.8em;
+    top: 10%;
+    left: 68%;
+    z-index: 0;
+  }
+  .title__banner__qs {
+    font-size: 0.8em;
+    top: 11%;
+    left: 60%;
+    z-index: 0;
+  }
+  .title__banner__contactos{
+    font-size: 0.8em;
+    top: 12%;
+    left: 2%;
+    z-index: 0;
+  }
+  .text__qs {
+    font-size: 0.9em;
+  }
+  .banner__qs__person {
+    display: block;
+  }
+  .person__img {
+    margin-left: 0.5rem;
+  }
+  .person__img__r {
+    margin-right: 0.2rem;
+  }
+
+  .person__title {
+    font-size: 1.8em;
+    font-weight: 800;
+    padding: 0 1em 0.2em;
+  }
+  .person__text__qs {
+    padding: 1em;
+    font-size: 0.9em;
+  }
+  .container__h2 {
+    font-size: 1.3em;
+  }
+  .footer__copy {
+    color: white;
+    margin-top: 1em;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+  }
+}

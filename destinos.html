@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Metatags.io -->
     <!-- Primary Meta Tags -->
     <title>Peluditos travel — Nunca viajar con mis humanos fue tan facil</title>
-    <meta name="title" content="Peluditos travel — Nunca viajar con mis humanos fue tan facil">
-    <meta name="description" content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador.">
+    <meta
+      name="title"
+      content="Peluditos travel — Nunca viajar con mis humanos fue tan facil"
+    />
+    <meta
+      name="description"
+      content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador."
+    />
 
-   <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://metatags.io/">
-    <meta property="og:title" content="Peluditos travel — Nunca viajar con mis humanos fue tan facil">
-    <meta property="og:description" content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador.">
-    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta
+      property="og:title"
+      content="Peluditos travel — Nunca viajar con mis humanos fue tan facil"
+    />
+    <meta
+      property="og:description"
+      content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador."
+    />
+    <meta
+      property="og:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://metatags.io/">
-    <meta property="twitter:title" content="Peluditos travel — Nunca viajar con mis humanos fue tan facil">
-    <meta property="twitter:description" content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador.">
-    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://metatags.io/" />
+    <meta
+      property="twitter:title"
+      content="Peluditos travel — Nunca viajar con mis humanos fue tan facil"
+    />
+    <meta
+      property="twitter:description"
+      content="Nos consideramos un equipo de especialistas que aman viajar con la familia al completo, con un concepto del viaje innovador."
+    />
+    <meta
+      property="twitter:image"
+      content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Peluditos travel</title>
     <script src="js/index.js" defer></script>
@@ -41,69 +62,150 @@
     <!--El Header esta creado atraves de una lista con un menu que deriva a cada pagina enlazada,
        tambien esta adaptado a responsive, con un input, un label y un div button,
        despues meto el logo de la pagina con una etiqueta de img -->
-    <header class="header__nav">
-      <div>
-        <a href="index.html">
-          <img
-            class="logo__img" src="assets/Logo/logopeluditos.png " loading="lazy" alt="logo"/></a>
+    <header>
+      <div class="top">
+        <div class="logo__img">
+          <a href="index.html">
+            <img src="assets/Logo/logopeluditos.png" alt="logo"
+          /></a>
+        </div>
+        <div class="main__menu">
+          <nav class="menu__nav">
+            <div class="menu__toggle">
+              <input type="checkbox" class="menu__toggle__input" />
+              <span class="nav__mobile"></span>
+              <span class="nav__mobile"></span>
+              <span class="nav__mobile"></span>
+              <ul class="menu">
+                <li class="menu__li">
+                  <a href="destinos.html" title="destinos">
+                    <span class="nav__element">Destinos</span>
+                  </a>
+                </li>
+                <li class="menu__li">
+                  <a href="actividades.html" title="actividades">
+                    <span class="nav__element">Actividades</span>
+                  </a>
+                </li>
+                <li class="menu__li">
+                  <a href="quiensomos.html" title="quiensomos">
+                    <span class="nav__element">Quien somos</span>
+                  </a>
+                </li>
+                <li class="menu__li">
+                  <a href="recomendaciones.html" title="recomendaciones">
+                    <span class="nav__element">Recomendaciones</span>
+                  </a>
+                </li>
+                <li class="menu__li">
+                  <a href="contactos.html" title="contactos">
+                    <span class="nav__element">Contactos</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
-      <input id="menu__toggle" type="checkbox" />
-      <label class="menu__button__container" for="menu__toggle">
-        <div class="menu__button"></div>
-      </label>
-      <ul class="menu menu__nav">
-        <li class="menu__li active"><a href="destinos.html" title="destinos">Destinos</a></li>
-        <li class="menu__li"><a href="actividades.html" title="actividades">Actividades</a></li>
-        <li class="menu__li"><a href="quiensomos.html" title="quiensomos">Quien somos</a></li>
-        <li class="menu__li">
-          <a href="recomendaciones.html" title="recomendaciones">Recomendaciones</a>
-        </li>
-        <li class="menu__li"><a href="contactos.html" title="contactos">Contactos</a></li>
-      </ul>
     </header>
     <!--final del header-->
 
-
     <!--Inicio del main-->
-     <!--el main esta formado por una img principal, que lleva un titulo metido en un h1 ,
+    <!--el main esta formado por una img principal, que lleva un titulo metido en un h1 ,
      tres div container que a su vez tiene varios titulos en clase h2 que diferencian cada destino,
      varios contenedores p con explicaciones de los mismos.
      tres div contenedores slider, con sus respectivos botones metidos en svg y 6 puntos creados con una lista-->
     <main>
+      <div class="banner__destinos">
+        <h1 class="title__banner__destinos">"¿Donde vamos?"</h1>
+        <img
+          src="assets/ImgDestinos/destinos.webp"
+          loading="lazy"
+          alt="familia"
+        />
+      </div>
       <div class="main__container__destinos">
         <h2 class="container__h2">Destinos de nieve</h2>
         <p class="container__content">
           Si eres amante de los animales y la nieve no puedes perder la
           oportunidad de visitar estos maravillosos lugares, y todo sin movernos
-          de la península. 
+          de la península.
         </p>
-        <p class="container__content">Si quieres un plan tranquilo en un lugar mágico,
-          Formigal-Panticosa en Huesca es el lugar ideal. Allí encontrarás
-          decenas de alojamientos pet friendly y rutas mágicas para hace con tus
-          mascotas.</p>
-        <p class="container__content">Sin embargo, si buscas un plan más emocionante, Sierra
-          Nevada en Granada es tu destino. Hogar del pico más alto de la
-          península, recoge cada año a miles de turistas, tanto humanos como
-          peluditos.</p>
+        <p class="container__content">
+          Si quieres un plan tranquilo en un lugar mágico, Formigal-Panticosa en
+          Huesca es el lugar ideal. Allí encontrarás decenas de alojamientos pet
+          friendly y rutas mágicas para hace con tus mascotas.
+        </p>
+        <p class="container__content">
+          Sin embargo, si buscas un plan más emocionante, Sierra Nevada en
+          Granada es tu destino. Hogar del pico más alto de la península, recoge
+          cada año a miles de turistas, tanto humanos como peluditos.
+        </p>
       </div>
       <div class="slider__destinos nieve">
         <div class="slider__container">
-          <img src="assets/ImgDestinos/nieve1.webp" alt="imagen1" loading="lazy" class="slider__img isActive" />
-          <img src="assets/ImgDestinos/nieve4.webp" alt="imagen2" loading="lazy" class="slider__img" />
-          <img src="assets/ImgDestinos/nieve3.webp"alt="imagen3" loading="lazy" class="slider__img" />
-          <img  src="assets/ImgDestinos/nieve4.webp"alt="imagen4" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/nieve5.webp" alt="imagen5" loading="lazy" class="slider__img" />
-          <img src="assets/ImgDestinos/nieve6.webp" alt="imagen6" loading="lazy" class="slider__img"/>
+          <img
+            src="assets/ImgDestinos/nieve1.webp"
+            alt="imagen1"
+            loading="lazy"
+            class="slider__img isActive"
+          />
+          <img
+            src="assets/ImgDestinos/nieve2.webp"
+            alt="imagen2"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/nieve3.webp"
+            alt="imagen3"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/nieve4.webp"
+            alt="imagen4"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/nieve5.webp"
+            alt="imagen5"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/nieve6.webp"
+            alt="imagen6"
+            loading="lazy"
+            class="slider__img"
+          />
         </div>
 
         <button class="slider__button prev">
-          <svg class="slider__svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" >
-            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
           </svg>
         </button>
         <button class="slider__button next">
-          <svg class="slider__svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" >
-            <path fill-rule="evenodd"  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
           </svg>
         </button>
 
@@ -121,40 +223,93 @@
 
       <div class="main__container__destinos">
         <h2 class="container__h2">Destinos de montaña</h2>
-        <p class="container__content">¿Buscas un plan tranquilo con tu mascota en el que poder
-           desconectar rodeado de naturaleza?Te decimos los mejores destinos para encontrarlo. 
+        <p class="container__content">
+          ¿Buscas un plan tranquilo con tu mascota en el que poder desconectar
+          rodeado de naturaleza?Te decimos los mejores destinos para
+          encontrarlo.
         </p>
-        <p class="container__content"> Si buscas alojarte en un pueblo con encanto,
-           desde el que poder acceder a rutas en la montaña con facilidad,
-          Candelario en Salamanca ha de ser tu primera opción. Este pueblo es considerado como uno de los más bonitos 
-          de nuestro país, y cuenta con las espectaculares vistas de la sierra de Béjar.Por otro lado,
-          si buscas algo más tranquilo y alejado, Bárcena Mayor Los Tojos en Cantabria es tu pueblo.
-          Este pequeño pueblo rural se encuentra dentro del Parque Natural Saja-Bayesa, ideal para hacer senderismo j
-          unto a nuestra compañía favorita.
-          </p>
-        <p class="container__content">Por otro lado, si buscas algo más tranquilo y alejado, Bárcena Mayor Los Tojos en Cantabria 
-          es tu pueblo. Este pequeño pueblo rural se encuentra dentro del Parque Natural Saja-Bayesa, ideal para hacer senderismo 
-          junto a nuestra compañía favorita.</p>
-        
+        <p class="container__content">
+          Si buscas alojarte en un pueblo con encanto, desde el que poder
+          acceder a rutas en la montaña con facilidad, Candelario en Salamanca
+          ha de ser tu primera opción. Este pueblo es considerado como uno de
+          los más bonitos de nuestro país, y cuenta con las espectaculares
+          vistas de la sierra de Béjar.Por otro lado, si buscas algo más
+          tranquilo y alejado, Bárcena Mayor Los Tojos en Cantabria es tu
+          pueblo. Este pequeño pueblo rural se encuentra dentro del Parque
+          Natural Saja-Bayesa, ideal para hacer senderismo j unto a nuestra
+          compañía favorita.
+        </p>
+        <p class="container__content">
+          Por otro lado, si buscas algo más tranquilo y alejado, Bárcena Mayor
+          Los Tojos en Cantabria es tu pueblo. Este pequeño pueblo rural se
+          encuentra dentro del Parque Natural Saja-Bayesa, ideal para hacer
+          senderismo junto a nuestra compañía favorita.
+        </p>
       </div>
       <div class="slider__destinos montana">
         <div class="slider__container">
-          <img src="assets/ImgDestinos/montana.webp" alt="imagen1" loading="lazy" class="slider__img isActive" />
-          <img src="assets/ImgDestinos/montana2.webp" alt="imagen2" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/montana1.webp"alt="imagen3" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/montana6.webp" alt="imagen4" loading="lazy" class="slider__img" />
-          <img src="assets/ImgDestinos/montana3.webp" alt="imagen5" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/montana4.webp"alt="imagen6" loading="lazy" class="slider__img" />
+          <img
+            src="assets/ImgDestinos/montana.webp"
+            alt="imagen1"
+            loading="lazy"
+            class="slider__img isActive"
+          />
+          <img
+            src="assets/ImgDestinos/montana2.webp"
+            alt="imagen2"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/montana1.webp"
+            alt="imagen3"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/montana6.webp"
+            alt="imagen4"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/montana3.webp"
+            alt="imagen5"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/montana4.webp"
+            alt="imagen6"
+            loading="lazy"
+            class="slider__img"
+          />
         </div>
 
         <button class="slider__button prev">
-          <svg class="slider__svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16" >
-            <path fill-rule="evenodd"  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z" />
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
           </svg>
         </button>
         <button class="slider__button next">
-          <svg class="slider__svg" xmlns="http://www.w3.org/2000/svg"fill="currentColor" viewBox="0 0 16 16" >
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
           </svg>
         </button>
 
@@ -171,35 +326,88 @@
       </div>
       <div class="main__container__destinos">
         <h2 class="container__h2">Destinos de playa</h2>
-        <p class="container__content">¿Qué mejor plan que tostrase bajo el sol 
-          con el sonido de las olas de fondo y tu mejor amigo peludo a tu lado?
-           Aquí encontrarás los mejores destinos para ir con tus mascotas.
+        <p class="container__content">
+          ¿Qué mejor plan que tostrase bajo el sol con el sonido de las olas de
+          fondo y tu mejor amigo peludo a tu lado? Aquí encontrarás los mejores
+          destinos para ir con tus mascotas.
         </p>
-        <p class="container__content">Si vas en busca de las refrescantes aguas del Atlántico,
-           la playa de Magdalena en A Coruña es la mejor playa para viajar con tu mascota. 
-           El suelo es completamente de arena, y sus aguas están cristalinas. No hay playa mejor.</p>
-        <p class="container__content">No obstante, si lo que buscas es disfrutar del calorcito del sur,
-           la playa del Gachero en Murcia es ideal. Tiene una amplia orilla de pequeñas piedras y arena dura, 
-           y es poco frecuentada por los bañistas, por lo que tu compañero disfrutará muchísimo más de la experiencia.</p>
+        <p class="container__content">
+          Si vas en busca de las refrescantes aguas del Atlántico, la playa de
+          Magdalena en A Coruña es la mejor playa para viajar con tu mascota. El
+          suelo es completamente de arena, y sus aguas están cristalinas. No hay
+          playa mejor.
+        </p>
+        <p class="container__content">
+          No obstante, si lo que buscas es disfrutar del calorcito del sur, la
+          playa del Gachero en Murcia es ideal. Tiene una amplia orilla de
+          pequeñas piedras y arena dura, y es poco frecuentada por los bañistas,
+          por lo que tu compañero disfrutará muchísimo más de la experiencia.
+        </p>
       </div>
       <div class="slider__destinos playa">
         <div class="slider__container">
-          <img src="assets/ImgDestinos/playa3.webp"alt="imagen1" loading="lazy" class="slider__img isActive" />
-          <img src="assets/ImgDestinos/playa5.webp" alt="imagen2" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/playa.webp" alt="imagen3" loading="lazy" class="slider__img"/>
-          <img src="assets/ImgDestinos/playa6.webp" alt="imagen4" loading="lazy" class="slider__img" />
-          <img src="assets/ImgDestinos/playa4.webp" alt="imagen5" loading="lazy" class="slider__img" />
-          <img src="assets/ImgDestinos/playa2.webp" alt="imagen6" loading="lazy" class="slider__img" />
+          <img
+            src="assets/ImgDestinos/playa3.webp"
+            alt="imagen1"
+            loading="lazy"
+            class="slider__img isActive"
+          />
+          <img
+            src="assets/ImgDestinos/playa5.webp"
+            alt="imagen2"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/playa.webp"
+            alt="imagen3"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/playa6.webp"
+            alt="imagen4"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/playa4.webp"
+            alt="imagen5"
+            loading="lazy"
+            class="slider__img"
+          />
+          <img
+            src="assets/ImgDestinos/playa2.webp"
+            alt="imagen6"
+            loading="lazy"
+            class="slider__img"
+          />
         </div>
 
         <button class="slider__button prev">
-          <svg class="slider__svg"xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+            />
           </svg>
         </button>
         <button class="slider__button next">
-          <svg class="slider__svg" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+          <svg
+            class="slider__svg"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+            />
           </svg>
         </button>
 
@@ -217,19 +425,55 @@
     </main>
     <!--Final del Main-->
 
-
     <!--Inicio del footer-->
     <!-- Es la finalizacion de la pagina donde meto varias redes sociales que enlazo de una pagina con un a href,que no derivan a ningun sitio
      pero si cambia el estilo  y meto un id con un pequeño parrafo de que la pagina a sido creada por mi-->
-     <footer>
+    <footer>
       <div class="footer__wrapper">
-        <ul class="footer__rrss ">
-          <li class="footer__facebook"><a href="https://www.facebook.com" target="_blank" rel="nofererrer"><img src="   https://cdn-icons-png.flaticon.com/512/3128/3128208.png"  height ="30" alt="facebook" title="facebook"></a></li>
-          <li class="footer__twitter"><a href="https://www.twitter.com" target="_blank" rel="nofererrer"><img src="   https://cdn-icons-png.flaticon.com/512/733/733635.png" height="30" alt="twiter" title="twiter" class="img-small"></a></li>
-          <li class="footer__youtube"><a href="https://www.youtube.com" target="_blank" rel="nofererrer"><img src="   https://cdn-icons-png.flaticon.com/512/733/733646.png "  height="30" alt="youtube" title="youtube" class="img-small"></a></li>
-          <li class="footer__instagram"><a href="https://www.instagram.com" target="_blank" rel="nofererrer"><img src="   https://cdn-icons-png.flaticon.com/512/1384/1384031.png "  height="30" alt="instagram" title="instagram" class="img-small"></a></li>
+        <ul class="footer__rrss">
+          <li class="footer__facebook">
+            <a href="https://www.facebook.com" target="_blank" rel="nofererrer"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/3128/3128208.png"
+                height="30"
+                alt="facebook"
+                title="facebook"
+            /></a>
+          </li>
+          <li class="footer__twitter">
+            <a href="https://www.twitter.com" target="_blank" rel="nofererrer"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/733/733635.png"
+                height="30"
+                alt="twiter"
+                title="twiter"
+                class="img-small"
+            /></a>
+          </li>
+          <li class="footer__youtube">
+            <a href="https://www.youtube.com" target="_blank" rel="nofererrer"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/733/733646.png "
+                height="30"
+                alt="youtube"
+                title="youtube"
+                class="img-small"
+            /></a>
+          </li>
+          <li class="footer__instagram">
+            <a href="https://www.instagram.com" target="_blank" rel="nofererrer"
+              ><img
+                src="   https://cdn-icons-png.flaticon.com/512/1384/1384031.png "
+                height="30"
+                alt="instagram"
+                title="instagram"
+                class="img-small"
+            /></a>
+          </li>
         </ul>
-        <p class="footer__copy">&copy;2023 - Created by:Silvia Rubio Izquierdo</p>
+        <p class="footer__copy">
+          &copy;2023 - Created by:Silvia Rubio Izquierdo
+        </p>
       </div>
     </footer>
     <!--final del footer-->
