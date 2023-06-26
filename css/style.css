@@ -135,31 +135,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/**** Css Menu, Logo y Responsive ****/
-/**** Desde la linea 170 - 
--->logo__img: logo creado para todas las paginas.
--->Header__nav: engloba toda la seccion del menu y el logo
--->Menu__button__container: crea el menu cuando esta en responsive.
--->Menu__toggle: desactiva el menu cuando esta toggle.
--->Menu__button/after y beefore:le da las caracteristicas al menu responsive,con una posicion absoluta y tambien tiene una transicion para que cambie del menu a la X.
--->#menu__toggle:checked + .menu__button__container .menu__button::before:al hacer checked crea una rotacion en el menu responsive.
--->#menu__toggle:checked + .menu__button__container .menu__button:al hacer checked añade el color negro.
--->#menu__toggle:checked + .menu__button__container .menu__button::after:al volver hacer checked, vuelve la rotacion a su estado original.
--->Menu__nav:le da estilos al menu, lo pone horizontal y cambia el formato de la letra.
--->Menu > li:le da un espacio al menu y cuando esta en responsive oculta todos los hijos directos.
--->Menu__li: le da una opacidad azul.
--->Menu__li.active:cuando la clase esta activa, crea una linea de color azul y quita la opacidad antes aplicada.
--->Menu__button__container:coloca el contenido en responsive.
--->menu:pone el menu en una posicion absoluta, aplicandole una direccion centrada en columna y un z-indez que indica el orden del elemento y descendientes.
--->#menu__toggle ~ .menu li: en responsive cuando se ejecuta el estado toggle, cambia el estado de visibilidad del menu y hace una transicion.
--->#menu__toggle:checked ~ .menu li: cuando esta en responsive y haces checked vuelve a su estado natural, tambien le aplico varias caracteristicas, como color,ancho y separaciones del mismo.
--->Title__banner.home:modificacion del titulo principal en la pagina home al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->Title__banner.actividades:modificacion del titulo principal en la pagina actividades al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->Title__banner.recomendaciones:modificacion del titulo principal en la pagina recomendaciones al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->Title__banner.qs:modificacion del titulo principal en la pagina quien somos al hacer el responsive, de la posicion,tamaño de la letra y un z index para difuminar el titulo cuando se abre el menu.
--->Test__qs:modifica el tamañno de la letra de los parrafos.
--->Container__h2:modifica el tamaño de la letra de los titulos de los parrafos.
-****/
+/**** Css Menu, Logo 
+
+/**** El código anterior define los estilos CSS para un menú de navegación con un logotipo y un botón de
+alternancia para dispositivos móviles. Incluye estilos para el diseño, posicionamiento y apariencia
+de los elementos del menú y sus efectos de desplazamiento. ****/
 .top {
   display: flex;
   justify-content: space-between;
@@ -220,19 +200,15 @@ body {
   color: #3366cc;
 }
 
-/****Final del header y Responsive****/
+/****Final del header****/
 /**** Final del Header ****/
 
-/**** Inicio del Main y Responsive ****/
-/**** Desde la linea 423 - 472
--->Title__banner: Titulo principal colocado de forma absoluta encima de la imagen,en tono aul con una pequeña sombra mas clarita y la letra en mayusculas y con mas grosor
--->Main__container:centra el contenido del bloque completo.
--->Row:centra el contenido del bloque de imagenes con un ancho del 80%.
--->Colum:da estilo a cada columna,con separaciones.
--->Colum__img:crea un separacion en vertical, y una transicion progresivamente.
--->Colum__img:hover:cuando esta en hover se hace una transformacion para que la imagen se haga mas grande.
--->Responsive 600px /800px:hacer el responsive, a  800px se pone en dos columnas y en 600% se pone en una columna.
-****/
+/**** Inicio del Main y Responsive 
+
+/**** El código anterior define los estilos CSS para el diseño de una página web. Incluye estilos para un
+título de banner, un contenedor principal con filas y columnas para mostrar contenido y consultas de
+medios para ajustar el diseño en diferentes tamaños de pantalla. Los estilos también incluyen
+efectos de desplazamiento para las imágenes en las columnas. ****/
 .title__banner__home {
   width: 30%;
   color: #3366cc;
@@ -284,26 +260,18 @@ body {
 }
 /**** Final del Main ****/
 
-/**** Inicio del Footer****/
-/**** Desde la linea  485 - 517
--->Footer__wrapper: color de fondo y un padding para darle altura.
--->Footer__wrapper a:color principal de las redes sociales.
--->Container__footer: colocacion del contenedor centrado.
--->Footer__wrapper #social-fb:hover:cuando esta en hover cambia a color azul oscuro.
--->footer__wrapper #social-tw:hover:cuando esta en hover cambia a color azul.
--->footer__wrapper #social-gp:hover:cuando esta en hover se pone de color rojo anaranjado.
--->footer__wrapper #social-em:hover:cuando hace hover cambia a amarillo.
--->#footer__copy: id con cambio de estilo de letra,tamaño y color, centrado al centro y un ,margin.
-****/
+/**** Inicio del Footer
+/**** El código anterior define los estilos para una sección de pie de página de un sitio web. Establece
+el color de fondo, el relleno y la alineación del envoltorio del pie de página. También define los
+estilos de los íconos de las redes sociales (Facebook, Twitter, YouTube e Instagram) y sus efectos
+de desplazamiento. Finalmente, establece el tamaño de fuente, el color y la alineación del texto de
+derechos de autor. ****/
 .footer__wrapper {
   background-color: #3366cc;
   padding: 2.5rem 0;
+ 
 }
-.footer__wrapper {
-  color: white;
-}
-.footer__rrss {
-  color: white;
+.footer__rrss { 
 
   display: flex;
   flex-wrap: wrap;
@@ -358,18 +326,13 @@ body {
 /****Final del footer****/
 
 /****************Css quien somos*************/
-/****Inicio quien somos****/
-/**** Desde la linea  533-611
--->Banner__qs:separacion de la img con el texto principal a traves de un margin.
--->Main__container__qs: texto principal centrado con un 80% y un margin.
--->Text__qs: cambio de la fuente de la letra y un paddin
--->Banner__qs__person:  separacion con el texto de arriba atraves de un margin,colocacion atraves de un display-flex y un fondo degrdado azul.
--->Banner__qs__person__r: separacion con el footer atraves de un margin,colocacion atraves de un display flex y un fondo degrado en tonos azules.
--->Banner__qs__person__img :imagen con un ancho del 40%,un margen a la izquierda del 15% y un overflow- hidden para que no se desborde.
--->Banner__qs__person__img__r: mismos cambios que la imagen anterior pero a la inversa.
--->Banner__qs__person__title:cambio en el tamaño de la letra y el grosor.
--->banner__qs__person__text:colocacion del texto con un paddin.
-****/
+/****Inicio quien somos
+
+/**** El código anterior define estilos CSS para una página web. Incluye estilos para una sección de
+banner, contenedor y persona. La sección de banner incluye un título y texto. La sección de persona
+incluye una imagen, título y texto. Los estilos incluyen varias propiedades, como tamaño de fuente,
+color, fondo, relleno y posición. El código también incluye fondos degradados para las secciones de
+banner y persona. **/
 .banner__qs {
   margin-bottom: 3em;
 }
@@ -469,24 +432,11 @@ body {
 /****Final de quien somos****/
 
 /****************Css destinos******************/
-/**** Desde la linea 615-724
--->Main__container__destinos: contenedor principal centrado con un ancho del 80& un margin auto y un display flex .
--->Container__content: cambio del tamaño de letra y separacion entre los parrafos.
--->Slider__destinos: ancho minimo para el tañamo del slider,con un borde redondeado, centrado con un margin , un overflow para que no desborde y una posicion relativa para los botones.
--->Slider__container: posicion relativa al contenedor.
--->Slider__img: aplico una posicion estatica.
--->Slider__img.isactive: opacidad para que se vean las imagenes.
--->Slider__img:nth-child: aplico una posicion estatica a todos los hijos directos.
--->Slider__button: ancho y alto de los botones en color azul, en forma redondeada al 50%,posicion absoluta para ponerlo superpuesta en la imagen,calculo la posicion y meto un transform y un transition para cuando clickas.
--->Slider__button:hover: cuando hace hover cambia la escala de la tranform.
--->Slider__button:active: cuando esta active cambia la escala de la transform.
--->Slider__button.prev: posicion boton izquierdo.
--->Slider__button.next:posicion boton derecho.
--->Slider__ul: colocacion centrada de los puntos con posicion absulata superpuesta a la img, con una separacion entre los mismos y un flex.
--->Slider__punto:tamaño de los puntos, con forma redona, borde negro con un transform con una scala de 1 y un transition.
--->Slider__punto:hover: cuando hace hover cambia la tranform y cambia el color de los puntos de azul a blanco.
--->Slider__punto.isActive: cuando esta isactive cambia al color azul.
-****/
+/**** El código anterior define los estilos CSS para un componente deslizante para mostrar destinos.
+Incluye estilos para el título del banner, el contenedor, las imágenes del control deslizante, los
+botones de navegación y los puntos de paginación. El control deslizante permite a los usuarios
+navegar a través de una serie de imágenes haciendo clic en los botones de navegación o puntos de
+paginación. ****/
 .title__banner__destinos {
   width: 30%;
   color: #3366cc;
@@ -507,7 +457,7 @@ body {
   padding-bottom: 1.25rem;
 }
 .slider__destinos {
-  width: 60%;
+  max-width: 55rem;
   margin: auto;
   margin-bottom: 3em;
   border-radius: 2rem;
@@ -594,12 +544,9 @@ body {
 /****Final de Destinos****/
 
 /******* Css Actividades*******
-/**** Desde la linea 734 - 755
--->Container__h2:cambia el titulo a mayusculas, el color, el tamaño y el ancho del mismo y le aplica un margin de separacion.
--->Main__container__actividades: colocacion del contenedor atraves de un flex, un margin y un ancho del 80%.
--->Container__content:tamano d ela letra y separacion entre parrafos.
--->Container__img:le aplica un ancho a la imagen, un margen de separacion por abajo y lo centra.
-****/
+/**** El código anterior define estilos para una página web que incluye un banner con actividades.
+Establece la fuente, el color y la ubicación del título del banner, así como el diseño y el estilo
+del contenido y las imágenes dentro del banner. ****/
 .container__h2 {
   color: #3366cc;
   font-size: 3.5rem;
@@ -645,10 +592,10 @@ width: 50%;
 /****Final de actividades****/
 
 /**** Css recomendaciones ****/
-/**** Desde la linea 764 - 782
--->Main__container__recomendaciones: contenedor con un ancho del 80% y colocacion a traves de un margin y un display al centro.
--->Title__banner__recomendaciones:titulo puesto en absolute para sobreponerlo en la img,cambio de la letra el ancho ,la posicion y el color.
-****/
+/**** El código anterior define estilos CSS para una sección de una página web que contiene un contenedor
+para recomendaciones. Establece el ancho, el margen y las propiedades de visualización del
+contenedor, así como el tamaño de fuente, el color y la posición de un banner de título. También
+define estilos para un contenedor de imágenes, incluidas las propiedades de visualización y margen. ****/
 .main__container__recomendaciones {
   width: 80%;
   margin: auto;
@@ -680,17 +627,10 @@ width: 50%;
 /**** Css Actividades ****/
 
 /**********css pagina de contacto********/
-/**** Desde la linea 797 -843
--->Iframe:le mete el ancho, el alto y el margin 
--->Main__container__form: centra el container con un flex
---Container__form: aplica un margin 
--->Form:aplica estilos a la caja del formulario 
--->Form__p:aplica el estilo dentro de la caja del formulario
--->Form__p input:crea los estilos del imput
--->Form__p textareacrea los estilos del textarea
--->form__button:crea los estilos del boton de enviar
--->
-****/
+/**** El código anterior define los estilos CSS para un formulario de contacto y una sección de mapa en
+una página web. Incluye estilos para el diseño, el tamaño, la posición y la apariencia de varios
+elementos, como el contenedor del formulario, las etiquetas del formulario, los campos de entrada y
+el botón de envío. ****/
 .main__maps {
   width: 80%;
   height: 25rem;
@@ -749,9 +689,13 @@ width: 50%;
   border-radius: 1.8rem;
 }
 /**** Final de Css Pagina de contactos****/
-
+/**** Inicio Responsive ****/
 /****** @media tablet *****/
-@media (min-width: 820px) and (max-width: 1300px) {
+/**** El código anterior define estilos CSS para diferentes tamaños de pantalla mediante consultas de
+medios. Ajusta el diseño y el estilo de varios elementos, como el menú de navegación, el logotipo,
+los títulos de los banners y el texto para pantallas con anchos entre 250 px y 1024 px. También
+oculta ciertos elementos, como puntos deslizantes para pantallas más pequeñas. ****/
+@media (min-width: 820px) and (max-width: 1024px) {
   .top {
     margin: 0;
   }
@@ -814,10 +758,13 @@ width: 50%;
 
   }
   .text__qs {
-    font-size: 0.2em;
+    font-size: 1.2em;
   }
   .container__h2 {
     font-size: 1.3em;
+  }
+  .slider__punto {
+    display: none;
   }
 }
 
@@ -1003,4 +950,8 @@ width: 50%;
     font-style: italic;
     text-align: center;
   }
+  .slider__punto {
+    display: none;
+  }
 }
+/**** Final Responsive ****/
